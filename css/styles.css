@@ -1,0 +1,233 @@
+div, p, table {
+	font-family: Georgia, Tahoma, sans-serif;
+}
+
+.description {
+	margin-top: 10px;
+	color: gray;
+	font-style: italic;
+}
+
+.red {
+	color: red;
+}
+
+.green {
+	color: green;
+}
+
+.buttons a {
+	float: left;
+	display: inline-block;
+	margin: 5px;
+	-moz-box-shadow: inset 0px 1px 0px 0px #2e2d2e;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #2e2d2e;
+	box-shadow: inset 0px 1px 0px 0px #2e2d2e;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #4d4c4d), color-stop(1, #292929));
+	background: -moz-linear-gradient(center top, #4d4c4d 5%, #292929 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4d4c4d', endColorstr='#292929');
+	background-color: #4d4c4d;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border: 1px solid #242324;
+	display: inline-block;
+	color: #12d7ed;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 6px 10px;
+	text-decoration: none;
+	text-shadow: 1px 1px 0px #121214;
+}
+
+.buttons a:hover {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #292929), color-stop(1, #4d4c4d));
+	background: -moz-linear-gradient(center top, #292929 5%, #4d4c4d 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#292929', endColorstr='#4d4c4d');
+	background-color: #292929;
+}
+
+.buttons a:active {
+	position: relative;
+	top: 1px;
+}
+
+/*filters*/
+.filters {
+	margin-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	background: #e6e5e1;
+	border-radius: 7px;
+	overflow: hidden;
+}
+
+.filters > div[id] {
+	float: left;
+	width: 135px;
+}
+
+/*.filters > div.buttons {*/
+/*width: 850px;*/
+/*}*/
+
+input[type="checkbox"] {
+	display: inline-block;
+	margin-left: 5px;
+}
+
+input[type="range"] {
+	display: inline-block;
+	width: 125px;
+	margin-left: 5px;
+}
+
+label {
+	display: inline-block;
+	width: 110px;
+}
+
+.filter_header {
+	display: block;
+	width: 130px;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-right: 15px;
+	margin-bottom: 5px;
+}
+
+/*tables*/
+#games, #tables > div {
+	display: inline;
+	float: left;
+	margin-right: 20px;
+}
+#tables > div > table{
+	margin-bottom: 5px;
+}
+#tables {
+	margin-top: 5px;
+	overflow: hidden;
+	clear: both;
+}
+
+table a:link {
+	color: #666;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+table a:visited {
+	color: #999999;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+table a:active,
+table a:hover {
+	color: #bd5a35;
+	text-decoration: underline;
+}
+
+table {
+	color: #666;
+	font-size: 11px;
+	text-shadow: 1px 1px 0px #fff;
+	background: #eaebec;
+	border: #ccc 1px solid;
+
+	border-radius: 3px;
+
+	box-shadow: 0 1px 2px #d1d1d1;
+}
+
+table th {
+	padding: 10px 5px;
+	border-top: 1px solid #fafafa;
+	border-bottom: 1px solid #e0e0e0;
+
+	background: #ededed;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));
+}
+
+table th:first-child {
+	text-align: left;
+	padding-left: 20px;
+}
+
+table tr:first-child th:first-child {
+	border-top-left-radius: 3px;
+}
+
+table tr:first-child th:last-child {
+	border-top-right-radius: 3px;
+}
+
+table tr {
+	text-align: center;
+	padding-left: 20px;
+}
+
+table td:first-child {
+	text-align: left;
+	border-left: 0;
+}
+
+table td {
+	padding: 10px 5px;
+	border-top: 1px solid #ffffff;
+	border-bottom: 1px solid #e0e0e0;
+	border-left: 1px solid #e0e0e0;
+
+	background: #fafafa;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#fafafa));
+}
+
+table tr.even td {
+	background: #f6f6f6;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f6f6f6));
+}
+
+table tr:last-child td {
+	border-bottom: 0;
+}
+
+table tr:last-child td:first-child {
+	border-bottom-left-radius: 3px;
+}
+
+table tr:last-child td:last-child {
+	border-bottom-right-radius: 3px;
+}
+
+table tr:hover td {
+	background: #f2f2f2;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#f0f0f0));
+}
+
+/*my fixes*/
+#games th {
+	cursor: hand;
+}
+
+table tr td:first-child, table tr th:first-child {
+	text-align: right;
+}
+
+input[type="checkbox"] {
+	display: none;
+}
+
+input[type="checkbox"] + label span {
+	display: inline-block;
+	width: 19px;
+	height: 19px;
+	margin: -1px 4px 0 0;
+	vertical-align: middle;
+	background: url(../img/check_radio_sheet.png) left top no-repeat;
+	cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label span {
+	background: url(../img/check_radio_sheet.png) -19px top no-repeat;
+}
