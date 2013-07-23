@@ -95,7 +95,7 @@ var UI_BASE = {
 	},
 	_progressionCells2: function(games, g) {
 		if (games.isProgression)
-			return this.td(g.seriesResult.toFixed(2), (g.seriesResult >= 0 ? "green" : "red")) +
+			return this.td(g.seriesResult.toFixed(2), B.getClass(g.seriesResult)) +
 				this.td(g.step);
 		return "";
 	}

@@ -7,8 +7,8 @@ var FILTERS = {
 	team: {filter: false},
 	place: {filter: false},
 	status: {filter: false},
-	ml_odds: {filter: false},
-	spread_odds: {filter: false}
+	odds: {filter: false},
+	parlays: {filter: false}
 };
 
 var FILTERS_MANAGER = {
@@ -81,6 +81,15 @@ var FILTERS_MANAGER = {
 		})
 	},
 	_initOdds: function() {
+		this._oddsInputs = $('#ml_odds_min,#ml_odds_max,#spread_odds_min,#spread_odds_max');
+		this._oddsInputs.on('change', function() {
+			FILTERS.odds.filter = false;
+			FILTERS_MANAGER._oddsInputs.each(function(ind, el) {
+				if (!(FILTERS.odds[el.value] = $(el).prop("checked")))
+					FILTERS.odds.filter = true;
+			});
+			console.log(FILTERS.odds);
+		});
 		$('#ml_odds_min_val').change(function(e) {
 			$("label[for='ml_odds_min']").html("<span></span>Min = " + e.target.value);
 		});
@@ -94,6 +103,23 @@ var FILTERS_MANAGER = {
 			$("label[for='spread_odds_max']").html("<span></span>Max = " + e.target.value);
 		})
 	},
+	_initParlays: function() {
+		this._parlayInputs = $('#parlay_min,#parlay_max');
+		this._parlayInputs.on('change', function() {
+			FILTERS.parlays.filter = false;
+			FILTERS_MANAGER._parlayInputs.each(function(ind, el) {
+				if (!(FILTERS.parlays[el.value] = $(el).prop("checked")))
+					FILTERS.parlays.filter = true;
+			});
+			console.log(FILTERS.parlays);
+		});
+		$('#parlay_min_val').change(function(e) {
+			$("label[for='parlay_min']").html("<span></span>Min = " + e.target.value);
+		});
+		$('#parlay_max_val').change(function(e) {
+			$("label[for='parlay_max']").html("<span></span>Max = " + e.target.value);
+		});
+	},
 	init: function() {
 		this._initSeasons();
 		this._initMonths();
@@ -102,6 +128,7 @@ var FILTERS_MANAGER = {
 		this._initPlace();
 		this._initStatus();
 		this._initOdds();
+		this._initParlays();
 	},
 
 	preQualifies: function(g) {
@@ -133,7 +160,21 @@ var FILTERS_MANAGER = {
 			if (!FILTERS.status.F && g[g.F] == g.takenTeam)
 				return false;
 		}
-		//todo: odds
+		if (FILTERS.odds.filter) {
+			if (g.takenBet == BET_TYPE.ML) {
+				if (FILTERS.odds.ml_min && g.takenOdds < Number($('#ml_odds_min_val')[0].value))
+					return false;
+				if (FILTERS.odds.ml_max && g.takenOdds > Number($('#ml_odds_max_val')[0].value))
+					return false;
+			}
+			if (g.takenBet == BET_TYPE.POS_SP || g.takenBet == BET_TYPE.NEG_SP || g.takenBet == BET_TYPE.NEG_SP_RED) {
+				if (FILTERS.odds.spread_min && g.takenOdds < Number($('#spread_odds_min_val')[0].value))
+					return false;
+				if (FILTERS.odds.spread_max && g.takenOdds > Number($('#spread_odds_max_val')[0].value))
+					return false;
+			}
+
+		}
 		return true
 	},
 
@@ -143,6 +184,19 @@ var FILTERS_MANAGER = {
 
 	afterFilterGames: function(picks) {
 		return picks.filter(FILTERS_MANAGER.afterQualifies)
+	},
+
+	qualifyParlay: function(p) {
+		if (FILTERS.parlays.parlay_min) {
+			if (p.plays.length < Number($('#parlay_min_val')[0].value))
+				return false;
+		}
+		if (FILTERS.parlays.parlay_max) {
+			var max = Number($('#parlay_max_val')[0].value);
+			if (p.plays.length > max)
+				p.plays = p.plays.slice(0, max);
+		}
+		return true;
 	}
 };
 

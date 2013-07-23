@@ -20,6 +20,8 @@
     <script src="js/systems/simple.js"></script>
     <script src="js/systems/clp.js"></script>
     <script src="js/systems/pp.js"></script>
+    <script src="js/systems/simple_parlay.js"></script>
+    <script src="js/systems/simple_parlay_progression.js"></script>
     <script src="js/ui/helpers/core.js"></script>
     <script src="js/ui/helpers/flat_ui_helper.js"></script>
     <script src="js/ui/helpers/parlay_ui_helper.js"></script>
@@ -122,21 +124,30 @@
     </div>
     <div id="by_ml_odds">
         <label class="filter_header">ML odds:</label>
-        <input id="ml_odds_min" type="checkbox" checked value="min"/>
-        <label for="ml_odds_min"><span></span>Min = 1.61</label>
-        <input id="ml_odds_min_val" type="range" value="1.9" min="1.0" max="3.0" step="0.01"/>
-        <input id="ml_odds_max" type="checkbox" checked value="max"/>
-        <label for="ml_odds_max"><span></span>Max = 1.64</label>
-        <input id="ml_odds_max_val" type="range" value="2.13" min="1.0" max="3.0" step="0.01"/>
+        <input id="ml_odds_min" type="checkbox" value="ml_min"/>
+        <label for="ml_odds_min"><span></span>Min = 1</label>
+        <input id="ml_odds_min_val" type="range" value="1" min="1.0" max="3.0" step="0.01"/>
+        <input id="ml_odds_max" type="checkbox" value="ml_max"/>
+        <label for="ml_odds_max"><span></span>Max = 2.5</label>
+        <input id="ml_odds_max_val" type="range" value="2.5" min="1.0" max="3.0" step="0.01"/>
     </div>
     <div id="by_spread_odds">
         <label class="filter_header">Spread odds:</label>
-        <input id="spread_odds_min" type="checkbox" checked value="min"/>
-        <label for="spread_odds_min"><span></span>Min = 1.81</label>
-        <input id="spread_odds_min_val" type="range" value="1.81" min="1.0" max="3.0" step="0.01"/>
-        <input id="spread_odds_max" type="checkbox" checked value="max"/>
-        <label for="spread_odds_max"><span></span>Max = 1.84</label>
-        <input id="spread_odds_max_val" type="range" value="1.84" min="1.0" max="3.0" step="0.01"/>
+        <input id="spread_odds_min" type="checkbox" value="spread_min"/>
+        <label for="spread_odds_min"><span></span>Min = 1</label>
+        <input id="spread_odds_min_val" type="range" value="1" min="1.0" max="3.0" step="0.01"/>
+        <input id="spread_odds_max" type="checkbox" value="spread_max"/>
+        <label for="spread_odds_max"><span></span>Max = 2.5</label>
+        <input id="spread_odds_max_val" type="range" value="2.5" min="1.0" max="3.0" step="0.01"/>
+    </div>
+    <div id="parlay_count">
+        <label class="filter_header">Games in parlay:</label>
+        <input id="parlay_min" type="checkbox" value="parlay_min"/>
+        <label for="parlay_min"><span></span>Min = 1</label>
+        <input id="parlay_min_val" type="range" value="1" min="1" max="10" step="1"/>
+        <input id="parlay_max" type="checkbox" value="parlay_max"/>
+        <label for="parlay_max"><span></span>Max = 5</label>
+        <input id="parlay_max_val" type="range" value="5" min="1" max="10" step="1"/>
     </div>
     <div class="buttons">
 

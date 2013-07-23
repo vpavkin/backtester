@@ -7,7 +7,7 @@ var PARLAY_UI = $.extend({}, UI_BASE, {
 			r += "<tr>" +
 				me._progressionCells1(games, g) +
 				me.td(g.D) +
-				me.td(g["takenBet"]) +
+				me.td(g["takenBetHTML"]) +
 				me.td(g["stake"].toFixed(2)) +
 				me.td(g["takenOdds"].toFixed(2)) +
 				me.td(g["result"].toFixed(2), (g["result"] >= 0 ? "green" : "red")) +

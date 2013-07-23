@@ -4,6 +4,7 @@ SYSTEMS.PP = $.extend({}, SYSTEM_BASE, {
 	BET: BETING_TYPE.PARLAY,
 	MM: MM_TYPE.PROGRESSION,
 	updateStats: true,
+	filterAfter: false,
 	_fits: function(team, stats) {
 		return stats[team] && stats[team].games > 10 && stats[team].winPercentage() >= 0.54 && stats[team].currentLosingStreak < 3;
 	},
@@ -40,19 +41,10 @@ SYSTEMS.PP = $.extend({}, SYSTEM_BASE, {
 
 		res.forEach(function(parlay, index) {
 			var _p = context.progressions.resolve(index);
-			var lost = _p.moneyLost, step = _p.step + 1;
-
 			P.win(parlay, _p.toWinEachStep());
-			if (parlay.result > 0) {
-				_p.close();
-			} else if (parlay.result < 0) {
-				_p.advance(parlay.stake);
-			}
 
-			parlay.series = _p;
+			_p.process(parlay);
 			parlay.prg = index + 1;
-			parlay.step = step;
-			parlay.seriesResult = _p.closed ? (parlay.result - lost) : -_p.moneyLost;
 		});
 		return res;
 	}

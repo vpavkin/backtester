@@ -22,9 +22,9 @@ var FLAT_UI = $.extend({}, UI_BASE, {
 				me.td(g["takenTeam"] + " " + g["takenBet"]) +
 				me.td(g["stake"].toFixed(2)) +
 				me.td(g["takenOdds"].toFixed(2)) +
-				me.td(g["result"].toFixed(2), (g["result"] >= 0 ? "green" : "red")) +
+				me.td(g["result"].toFixed(2), B.getClass(g.result)) +
 				me._progressionCells2(games, g) +
-				me.td(g["accumulatedResult"].toFixed(2), (g["accumulatedResult"] > 0 ? "green" : "red")) +
+				me.td(g["accumulatedResult"].toFixed(2), B.getClass(g["accumulatedResult"])) +
 				"</tr>";
 		});
 		return r;
@@ -77,7 +77,7 @@ var FLAT_UI = $.extend({}, UI_BASE, {
 					this.td(o.won) +
 					this.td(o.lost) +
 					this.td((100 * o.won / (o.won + o.lost)).toFixed(2) + "%") +
-					this.td(o.result.toFixed(1), o.result >= 0 ? "green" : "red") +
+					this.td(o.result.toFixed(1), B.getClass(o.result)) +
 					"</tr>";
 			}
 		}
@@ -107,7 +107,7 @@ var FLAT_UI = $.extend({}, UI_BASE, {
 					this.td(o.won) +
 					this.td(o.lost) +
 					this.td((100 * o.won / (o.won + o.lost)).toFixed(2) + "%") +
-					this.td(o.result.toFixed(1), o.result >= 0 ? "green" : "red") +
+					this.td(o.result.toFixed(1), B.getClass(o.result)) +
 					"</tr>";
 			}
 		}
@@ -157,7 +157,7 @@ var FLAT_UI = $.extend({}, UI_BASE, {
 					this.td(odds[taken].won) +
 					this.td(odds[taken].lost) +
 					this.td((100 * odds[taken].won / (odds[taken].won + odds[taken].lost)).toFixed(2) + "%") +
-					this.td(odds[taken].result.toFixed(1), odds[taken].result >= 0 ? "green" : "red") +
+					this.td(odds[taken].result.toFixed(1), B.getClass(odds[taken].result)) +
 					"</tr>";
 			}
 		}
@@ -214,7 +214,7 @@ var FLAT_UI = $.extend({}, UI_BASE, {
 		t.find("#td-average-odds").html((odds / results.length).toFixed(2));
 		var acc = results[results.length - 1].accumulatedResult;
 		t.find("#td-roi").html((100 * acc / staked).toPrecision(4) + "%");
-		t.find("#td-result").html(acc.toFixed(2)).addClass(acc >= 0 ? "green" : "red");
+		t.find("#td-result").html(acc.toFixed(2)).addClass(B.getClass(acc));
 
 
 		var maxLossesInARow = 0;

@@ -16,6 +16,18 @@ var Progression = function(id, toWin) {
 	};
 	this.toWinSeries = function() {
 		return this.moneyLost + UNIT_SIZE;
+	};
+	this.process = function(g) {
+		var lost = this.moneyLost, step = this.step + 1;
+		if (g.result > 0) {
+			this.close();
+		} else if (g.result < 0) {
+			this.advance(g.stake);
+		}
+
+		g.series = this;
+		g.step = step;
+		g.seriesResult = this.closed ? (g.result - lost) : -this.moneyLost;
 	}
 };
 

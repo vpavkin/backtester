@@ -51,8 +51,10 @@ var AGGREGATORS = {
 		}, {});
 
 		DATA.eachGameDay(function(D) {
-			if (days[D])
-				output.push(FILTERS_MANAGER.afterFilterGames(system.process(days[D], context)));
+			if (days[D]) {
+				var res = system.process(days[D], context);
+				output.push(system.filterAfter ? FILTERS_MANAGER.afterFilterGames(res) : res);
+			}
 			if (system.updateStats)
 				AGGREGATORS._updateDailyStats(DATA.games(D), context)
 		});

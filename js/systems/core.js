@@ -16,6 +16,7 @@ var SYSTEM_BASE = {
 	MM: MM_TYPE.FLAT,
 	BET: BETING_TYPE.SINGLE,
 	updateStats: false,
+	filterAfter: true,
 	init: function() {
 	},
 	process: function(games) {

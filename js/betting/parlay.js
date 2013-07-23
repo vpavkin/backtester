@@ -16,6 +16,11 @@ var P = $.extend({}, B, {
 			return takenBet + (takenBet ? "+" : "") + game.takenTeam + " " + game.takenBet;
 		}, "");
 	},
+	_takenBetHTML: function(p) {
+		return p.plays.reduce(function(takenBet, game) {
+			return takenBet + (takenBet ? "+" : "") + "<span class='" + B.getClass(game.result) + "'>" + game.takenTeam + " " + game.takenBet + "</span>";
+		}, "");
+	},
 	_result: function(p) {
 		return p.plays.reduce(function(result, game) {
 			if (game.result > 0)
@@ -32,6 +37,7 @@ var P = $.extend({}, B, {
 		p.takenOdds = this._odds(p);
 		p.takenTeam = "";
 		p.takenBet = this._takenBet(p);
+		p.takenBetHTML = this._takenBetHTML(p);
 		p.result = this._result(p);
 	},
 	win: function(p, amount) {

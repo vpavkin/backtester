@@ -4,11 +4,17 @@ var BET_TYPE = {
 	NEG_SP: "-1.5",
 	NEG_SP_RED: "-1",
 	OVER: "OVER",
-	UNDER: "UNDER",
+	UNDER: "UNDER"
 };
 
 var B = {
-
+	getClass: function(res) {
+		if (res > 0)
+			return "green";
+		else if (res < 0)
+			return "red";
+		return ""
+	},
 	getAmount: function(amount) {
 		return (amount == undefined || amount == null) ? UNIT_SIZE : amount;
 	},
@@ -147,7 +153,7 @@ var B = {
 		g.stake = B.getAmount(amount);
 		//TODO: add one more field betParam?
 		g.takenTeam = BET_TYPE.OVER;
-		g.takenBet =  g["O/U_L"];
+		g.takenBet = g["O/U_L"];
 		B.WLP(g, g.O_L, g.O_R);
 	},
 	betUnder: function(g, amount) {
