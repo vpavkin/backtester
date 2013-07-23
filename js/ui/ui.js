@@ -1,8 +1,20 @@
 var APP_UI = {
 	_parser: function(s) {
+		switch (s.MM) {
+			case MM_TYPE.FLAT:
+				return PARSERS.flat;
+			case MM_TYPE.PROGRESSION:
+				return PARSERS.progression;
+		}
 		return PARSERS.flat;
 	},
 	_helper: function(s) {
+		switch (s.BET) {
+			case BETING_TYPE.SINGLE:
+				return FLAT_UI;
+			case BETING_TYPE.PARLAY:
+				return PARLAY_UI;
+		}
 		return FLAT_UI;
 	},
 	_aggregator: function(s) {

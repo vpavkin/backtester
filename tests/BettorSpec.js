@@ -28,28 +28,28 @@ describe("Better", function() {
 			B.betRoadML(g);
 			expect(g.takenBet).toEqual(BET_TYPE.ML);
 			expect(g.takenOdds).toEqual(g.R_ML);
-			expect(g.result).toEqual(Number((g.R_ML_R ? UNIT_SIZE * (g.takenOdds - 1) : -UNIT_SIZE).toFixed(2)));
+			expect(g.result).toEqual(g.R_ML_R ? UNIT_SIZE * (g.takenOdds - 1) : -UNIT_SIZE);
 			expect(g.takenTeam).toEqual(g.R);
 			B.clearGame(g);
 
 			B.betHomeML(g);
 			expect(g.takenBet).toEqual(BET_TYPE.ML);
 			expect(g.takenOdds).toEqual(g.H_ML);
-			expect(g.result).toEqual(Number((g.H_ML_R ? UNIT_SIZE * (g.takenOdds - 1) : -UNIT_SIZE).toFixed(2)));
+			expect(g.result).toEqual(Number((g.H_ML_R ? UNIT_SIZE * (g.takenOdds - 1) : -UNIT_SIZE)));
 			expect(g.takenTeam).toEqual(g.H);
 			B.clearGame(g);
 
 			B.betDogML(g);
 			expect(g.takenBet).toEqual(BET_TYPE.ML);
 			expect(g.takenOdds).toEqual(g.H_ML <= g.R_ML ? g.R_ML : g.H_ML);
-			expect(g.result).toEqual(Number((g.U_ML_R ? UNIT_SIZE * (g.takenOdds - 1) : -UNIT_SIZE).toFixed(2)));
+			expect(g.result).toEqual(Number((g.U_ML_R ? UNIT_SIZE * (g.takenOdds - 1) : -UNIT_SIZE)));
 			expect(g.takenTeam).toEqual(g.H_ML <= g.R_ML ? g.R : g.H);
 
 			B.clearGame(g);
 			B.betFavML(g);
 			expect(g.takenBet).toEqual(BET_TYPE.ML);
 			expect(g.takenOdds).toEqual(g.H_ML <= g.R_ML ? g.H_ML : g.R_ML);
-			expect(g.result).toEqual(Number((g.F_ML_R ? UNIT_SIZE * (g.takenOdds - 1) : -UNIT_SIZE).toFixed(2)));
+			expect(g.result).toEqual(Number((g.F_ML_R ? UNIT_SIZE * (g.takenOdds - 1) : -UNIT_SIZE)));
 			expect(g.takenTeam).toEqual(g.H_ML <= g.R_ML ? g.H : g.R);
 		});
 	});
@@ -59,7 +59,7 @@ describe("Better", function() {
 			B.betDogSpread(g);
 			expect(g.takenBet).toEqual(BET_TYPE.POS_SP);
 			expect(g.takenOdds).toEqual(g["U+1.5"]);
-			expect(g.result).toEqual(Number((g["U+1.5_R"] ? UNIT_SIZE * (g.takenOdds - 1) : -UNIT_SIZE).toFixed(2)));
+			expect(g.result).toEqual(Number((g["U+1.5_R"] ? UNIT_SIZE * (g.takenOdds - 1) : -UNIT_SIZE)));
 			expect(g.takenTeam).toEqual(g.H_ML <= g.R_ML ? g.R : g.H);
 		});
 	});
@@ -70,9 +70,9 @@ describe("Better", function() {
 			expect(g.takenBet).toEqual(BET_TYPE.NEG_SP_RED);
 			expect(g.takenOdds).toEqual(g["F-1"]);
 			if (B.isFavHome(g)) {
-				expect(g.result).toEqual(Number((g.H_R - g.R_R > 1 ? UNIT_SIZE * (g.takenOdds - 1) : (g.H_R - g.R_R == 1 ? 0 : -UNIT_SIZE)).toFixed(2)));
+				expect(g.result).toEqual(Number((g.H_R - g.R_R > 1 ? UNIT_SIZE * (g.takenOdds - 1) : (g.H_R - g.R_R == 1 ? 0 : -UNIT_SIZE))));
 			} else {
-				expect(g.result).toEqual(Number((g.R_R - g.H_R > 1 ? UNIT_SIZE * (g.takenOdds - 1) : (g.R_R - g.H_R == 1 ? 0 : -UNIT_SIZE)).toFixed(2)));
+				expect(g.result).toEqual(Number((g.R_R - g.H_R > 1 ? UNIT_SIZE * (g.takenOdds - 1) : (g.R_R - g.H_R == 1 ? 0 : -UNIT_SIZE))));
 			}
 			expect(g.takenTeam).toEqual(g.H_ML <= g.R_ML ? g.H : g.R);
 		});

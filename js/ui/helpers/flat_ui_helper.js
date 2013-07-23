@@ -1,33 +1,37 @@
 var FLAT_UI = $.extend({}, UI_BASE, {
+
 	makeGamesTable: function(games) {
 		var me = this;
-		var r = this.makeGamesTableHeader();
-		games.forEach(function(item) {
+		var r = this.makeGamesTableHeader(games);
+		games.forEach(function(g) {
 			r += "<tr>" +
-				me.td(item.D) +
-				me.td(item.H) +
-				me.td(item.R) +
-				me.td(item["H_ML"]) +
-				me.td(item["R_ML"]) +
-				me.td(item["U+1.5"]) +
-				me.td(item["F-1"]) +
-				me.td(item["O/U_L"]) +
-				me.td(item["O_L"]) +
-				me.td(item["U_L"]) +
-				me.td(item["H_R"]) +
-				me.td(item["R_R"]) +
-				me.td(item["T"]) +
-				me.td(item["takenTeam"] + " " + item["takenBet"]) +
-				me.td(item["stake"]) +
-				me.td(item["takenOdds"].toFixed(2)) +
-				me.td(item["result"], (item["result"] >= 0 ? "green" : "red")) +
-				me.td(item["accumulatedResult"], (item["accumulatedResult"] > 0 ? "green" : "red")) +
+				me._progressionCells1(games, g) +
+				me.td(g.D) +
+				me.td(g.H) +
+				me.td(g.R) +
+				me.td(g["H_ML"]) +
+				me.td(g["R_ML"]) +
+				me.td(g["U+1.5"]) +
+				me.td(g["F-1"]) +
+				me.td(g["O/U_L"]) +
+				me.td(g["O_L"]) +
+				me.td(g["U_L"]) +
+				me.td(g["H_R"]) +
+				me.td(g["R_R"]) +
+				me.td(g["T"]) +
+				me.td(g["takenTeam"] + " " + g["takenBet"]) +
+				me.td(g["stake"].toFixed(2)) +
+				me.td(g["takenOdds"].toFixed(2)) +
+				me.td(g["result"].toFixed(2), (g["result"] >= 0 ? "green" : "red")) +
+				me._progressionCells2(games, g) +
+				me.td(g["accumulatedResult"].toFixed(2), (g["accumulatedResult"] > 0 ? "green" : "red")) +
 				"</tr>";
 		});
 		return r;
 	},
-	makeGamesTableHeader: function() {
+	makeGamesTableHeader: function(games) {
 		return "<tr>" +
+			this._progressionHeaders1(games) +
 			"<th title='Date'>Date</th>" +
 			"<th title='Home'>Home</th>" +
 			"<th title='Road'>Road</th>" +
@@ -45,6 +49,7 @@ var FLAT_UI = $.extend({}, UI_BASE, {
 			"<th title='Bet amount in $'>Stake</th>" +
 			"<th title='Odds'>Odds</th>" +
 			"<th title='Bet result in $'>Result</th>" +
+			this._progressionHeaders2(games) +
 			"<th title='Accumulated result with current bet'>Accumulated result</th>" +
 			"</tr>"
 	},
@@ -161,12 +166,12 @@ var FLAT_UI = $.extend({}, UI_BASE, {
 	makeBetsTable: function(results) {
 		var r = '<tr><th>Bet</th><th>Won</th><th>Lost</th><th>Win %</th></tr>';
 		var bets = {};
-		results.forEach(function(item) {
-			var taken = item.takenBet;
+		results.forEach(function(g) {
+			var taken = g.takenBet;
 			!bets[taken] && (bets[taken] = {won: 0, lost: 0});
-			if (item.result > 0) {
+			if (g.result > 0) {
 				bets[taken].won++;
-			} else if (item.result < 0) {
+			} else if (g.result < 0) {
 				bets[taken].lost++;
 			}
 		});
@@ -209,7 +214,7 @@ var FLAT_UI = $.extend({}, UI_BASE, {
 		t.find("#td-average-odds").html((odds / results.length).toFixed(2));
 		var acc = results[results.length - 1].accumulatedResult;
 		t.find("#td-roi").html((100 * acc / staked).toPrecision(4) + "%");
-		t.find("#td-result").html(acc).addClass(acc >= 0 ? "green" : "red");
+		t.find("#td-result").html(acc.toFixed(2)).addClass(acc >= 0 ? "green" : "red");
 
 
 		var maxLossesInARow = 0;

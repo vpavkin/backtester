@@ -71,7 +71,10 @@ var FILTERS_MANAGER = {
 		})
 	},
 	_initTeam: function() {
-		this._teamSelect = $('#teams_teams');
+		var ts = this._teamSelect = $('#teams_teams');
+		TEAMS.forEach(function(item) {
+			ts.append("<option value='" + item + "'>" + item + "</option> ");
+		});
 		this._teamSelect.on('change', function() {
 			FILTERS.team.filter = (FILTERS.team.team = FILTERS_MANAGER._teamSelect.val()) != "All";
 			console.log(FILTERS.team);

@@ -23,8 +23,12 @@ var DRAWER = {
 			.Set('labels', this.labels(25, Math.round(res.length / 25)))
 			.Set('chart.background.grid.dotted', true)
 			.Set('chart.background.grid.autofit.numhlines', 20)
-			.Set('chart.tooltips', res.map(function(item, index) {
-				return index + ": " + item.D + " " + item.H + "-" + item.R;
+			.Set('chart.tooltips', res.map(function(g, index) {
+				if (g.H) {//single
+					return index + ": " + g.D + " " + g.H + "-" + g.R + " " + (g.result > 0 ? "+" : "") + g.result.toFixed(2) + "$";
+				} else {//parlay
+					return index + ": " + g.D + " " + g.takenBet + " " + (g.result > 0 ? "+" : "") + g.result.toFixed(2) + "$";
+				}
 			}))
 			.Draw();
 	}

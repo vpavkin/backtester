@@ -4,7 +4,7 @@ var BET_TYPE = {
 	NEG_SP: "-1.5",
 	NEG_SP_RED: "-1",
 	OVER: "OVER",
-	UNDER: "UNDER"
+	UNDER: "UNDER",
 };
 
 var B = {
@@ -38,10 +38,10 @@ var B = {
 		return odd >= start && odd <= end;
 	},
 	W: function(g, odds) {
-		g.result = Number((g.stake * (odds - 1)).toFixed(2));
+		g.result = g.stake * (odds - 1);
 	},
 	L: function(g) {
-		g.result = Number(-g.stake.toFixed(2));
+		g.result = -g.stake;
 	},
 	P: function(g) {
 		g.result = 0

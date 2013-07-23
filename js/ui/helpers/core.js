@@ -74,5 +74,29 @@ var UI_BASE = {
 	},
 	setDescription: function(desc) {
 		$('.description').html(desc || "");
+	},
+	//heplers for progressions
+	_progressionHeaders1: function(games) {
+		if (games.isProgression)
+			return "<th title='Series ID'>ID</th>" +
+				"<th title='Progression ID'>PRG</th>";
+		return "";
+	},
+	_progressionCells1: function(games, g) {
+		if (games.isProgression)
+			return this.td(g.series.id) +
+				this.td(g.prg);
+		return "";
+	},
+	_progressionHeaders2: function(games) {
+		if (games.isProgression)
+			return "<th title='Current Series result'>Series Res.</th>" +
+				"<th title='Series Tier'>Tier</th>";
+	},
+	_progressionCells2: function(games, g) {
+		if (games.isProgression)
+			return this.td(g.seriesResult.toFixed(2), (g.seriesResult >= 0 ? "green" : "red")) +
+				this.td(g.step);
+		return "";
 	}
 };
