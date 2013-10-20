@@ -1,4 +1,4 @@
-div, p, table {
+div, p, table, select {
 	font-family: Georgia, Tahoma, sans-serif;
 }
 
@@ -102,9 +102,11 @@ label {
 	float: left;
 	margin-right: 20px;
 }
-#tables > div > table{
+
+#tables > div > table {
 	margin-bottom: 5px;
 }
+
 #tables {
 	margin-top: 5px;
 	overflow: hidden;

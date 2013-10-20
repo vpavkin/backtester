@@ -11,20 +11,20 @@ var FLAT_UI = $.extend({}, UI_BASE, {
 				me.td(g.R) +
 				me.td(g["H_ML"]) +
 				me.td(g["R_ML"]) +
-				me.td(g["U+1.5"]) +
-				me.td(g["F-1"]) +
+				me.td(g["H_S_L"]) +
+				me.td(g["R_S_L"]) +
 				me.td(g["O/U_L"]) +
 				me.td(g["O_L"]) +
 				me.td(g["U_L"]) +
 				me.td(g["H_R"]) +
 				me.td(g["R_R"]) +
 				me.td(g["T"]) +
-				me.td(g["takenTeam"] + " " + g["takenBet"]) +
+				me.td(g["betString"]) +
 				me.td(g["stake"].toFixed(2)) +
 				me.td(g["takenOdds"].toFixed(2)) +
-				me.td(g["result"].toFixed(2), B.getClass(g.result)) +
+				me.td(g["result"].toFixed(2), UTILS.getCSSClass(g.result)) +
 				me._progressionCells2(games, g) +
-				me.td(g["accumulatedResult"].toFixed(2), B.getClass(g["accumulatedResult"])) +
+				me.td(g["accumulatedResult"].toFixed(2), UTILS.getCSSClass(g["accumulatedResult"])) +
 				"</tr>";
 		});
 		return r;
@@ -37,13 +37,13 @@ var FLAT_UI = $.extend({}, UI_BASE, {
 			"<th title='Road'>Road</th>" +
 			"<th title='Home ML Odds'>H ML</th>" +
 			"<th title='Road ML Odds'>R ML</th>" +
-			"<th title='Dog +1.5 odds'>Dog +1.5</th>" +
-			"<th title='Fav -1 odds'>Fav -1</th>" +
+			"<th title='Home Spread odds'>H SL</th>" +
+			"<th title='Road Spread odds'>R SL</th>" +
 			"<th title='O/U line'>O/U</th>" +
 			"<th title='Over odds'>O odds</th>" +
 			"<th title='Under Odds'>U odds</th>" +
-			"<th title='Runs scored Home'>H Runs</th>" +
-			"<th title='Runs scored Road'>R Runs</th>" +
+			"<th title='Pts scored Home'>H Pts</th>" +
+			"<th title='Pts scored Road'>R Pts</th>" +
 			"<th title='Total runs'>Total</th>" +
 			"<th title='Taken bet'>Taken</th>" +
 			"<th title='Bet amount in $'>Stake</th>" +
@@ -77,7 +77,7 @@ var FLAT_UI = $.extend({}, UI_BASE, {
 					this.td(o.won) +
 					this.td(o.lost) +
 					this.td((100 * o.won / (o.won + o.lost)).toFixed(2) + "%") +
-					this.td(o.result.toFixed(1), B.getClass(o.result)) +
+					this.td(o.result.toFixed(1), UTILS.getCSSClass(o.result)) +
 					"</tr>";
 			}
 		}
@@ -107,7 +107,7 @@ var FLAT_UI = $.extend({}, UI_BASE, {
 					this.td(o.won) +
 					this.td(o.lost) +
 					this.td((100 * o.won / (o.won + o.lost)).toFixed(2) + "%") +
-					this.td(o.result.toFixed(1), B.getClass(o.result)) +
+					this.td(o.result.toFixed(1), UTILS.getCSSClass(o.result)) +
 					"</tr>";
 			}
 		}
@@ -157,7 +157,7 @@ var FLAT_UI = $.extend({}, UI_BASE, {
 					this.td(odds[taken].won) +
 					this.td(odds[taken].lost) +
 					this.td((100 * odds[taken].won / (odds[taken].won + odds[taken].lost)).toFixed(2) + "%") +
-					this.td(odds[taken].result.toFixed(1), B.getClass(odds[taken].result)) +
+					this.td(odds[taken].result.toFixed(1), UTILS.getCSSClass(odds[taken].result)) +
 					"</tr>";
 			}
 		}
@@ -214,7 +214,7 @@ var FLAT_UI = $.extend({}, UI_BASE, {
 		t.find("#td-average-odds").html((odds / results.length).toFixed(2));
 		var acc = results[results.length - 1].accumulatedResult;
 		t.find("#td-roi").html((100 * acc / staked).toPrecision(4) + "%");
-		t.find("#td-result").html(acc.toFixed(2)).addClass(B.getClass(acc));
+		t.find("#td-result").html(acc.toFixed(2)).addClass(UTILS.getCSSClass(acc));
 
 
 		var maxLossesInARow = 0;

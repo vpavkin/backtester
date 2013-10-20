@@ -1,10 +1,8 @@
 var PARSERS = {
-	_flatten: function(output) {
-		return [].concat.apply([], output);
-	},
+
 
 	flat: function(output) {
-		var res = PARSERS._flatten(output);
+		var res = UTILS.flatten(output);
 		var accRes = 0;
 		for (var i = 0; i < res.length; i++) {
 			var g = res[i];

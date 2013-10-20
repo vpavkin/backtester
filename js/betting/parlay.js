@@ -7,18 +7,17 @@ var P = $.extend({}, B, {
 	},
 	_odds: function(p) {
 		return p.plays.reduce(function(odds, game) {
-
 			return odds * game.takenOdds
 		}, 1);
 	},
 	_takenBet: function(p) {
 		return p.plays.reduce(function(takenBet, game) {
-			return takenBet + (takenBet ? "+" : "") + game.takenTeam + " " + game.takenBet;
+			return takenBet + (takenBet ? "+" : "") + game.betString;
 		}, "");
 	},
 	_takenBetHTML: function(p) {
 		return p.plays.reduce(function(takenBet, game) {
-			return takenBet + (takenBet ? "+" : "") + "<span class='" + B.getClass(game.result) + "'>" + game.takenTeam + " " + game.takenBet + "</span>";
+			return takenBet + (takenBet ? "+" : "") + "<span class='" + UTILS.getCSSClass(game.result) + "'>" + game.betString + "</span>";
 		}, "");
 	},
 	_result: function(p) {

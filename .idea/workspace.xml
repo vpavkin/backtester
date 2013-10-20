@@ -2,49 +2,113 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/data/data_helper.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/data/stats.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/util.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/v_pavkin.xml" />
-      <change type="DELETED" beforePath="C:\Dropbox\bookies\pp_backtest\backtester\js\stats.js" afterPath="" />
-      <change type="MOVED" beforePath="C:\Dropbox\bookies\pp_backtest\backtester\js\bettor.js" afterPath="$PROJECT_DIR$/js/betting/bet.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/mlb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/sports/mlb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/systems/mlb/mlb_system_base.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/systems/mlb/simple_parlay_progression.js" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\data\data.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\js\data\data_helper.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\js\systems\simple_parlay_progression.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\css\ModalDialog.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\css\animations.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\css\website.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\excanvas\EXCANVAS-LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\excanvas\HTACCESS-SAMPLE" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\excanvas\excanvas.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\images\bg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\images\bullet.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\images\creative-commons-logo-large.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\images\title.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\.BC.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\.CHANGELOG.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.bar.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.bipolar.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.common.annotate.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.common.context.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.common.core.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.common.dynamic.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.common.effects.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.common.key.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.common.resizing.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.common.tooltips.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.common.zoom.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.cornergauge.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.drawing.circle.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.drawing.image.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.drawing.marker1.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.drawing.marker2.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.drawing.poly.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.drawing.rect.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.drawing.text.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.drawing.xaxis.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.drawing.yaxis.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.fuel.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.funnel.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.gantt.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.gauge.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.hbar.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.hprogress.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.led.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.line.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.meter.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.modaldialog.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.odo.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.pie.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.radar.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.rose.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.rscatter.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.scatter.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.thermometer.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.vprogress.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.waterfall.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\license.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/BettorSpec.js" afterPath="$PROJECT_DIR$/tests/BettorSpec.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/aggregators.js" afterPath="$PROJECT_DIR$/js/aggregators.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/betting/bet.js" afterPath="$PROJECT_DIR$/js/betting/bet.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/systems/core.js" afterPath="$PROJECT_DIR$/js/systems/core.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/ui/helpers/core.js" afterPath="$PROJECT_DIR$/js/ui/helpers/core.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/ui/drawer.js" afterPath="$PROJECT_DIR$/js/ui/drawer.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/ui/filters_manager.js" afterPath="$PROJECT_DIR$/js/ui/filters_manager.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/ui/helpers/flat_ui_helper.js" afterPath="$PROJECT_DIR$/js/ui/helpers/flat_ui_helper.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.html" afterPath="$PROJECT_DIR$/main.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/betting/parlay.js" afterPath="$PROJECT_DIR$/js/betting/parlay.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/parsers.js" afterPath="$PROJECT_DIR$/js/parsers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/betting/progressionManager.js" afterPath="$PROJECT_DIR$/js/betting/progressionManager.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/data/stats.js" afterPath="$PROJECT_DIR$/js/data/stats.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/css/styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests.html" afterPath="$PROJECT_DIR$/tests.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/ui/ui.js" afterPath="$PROJECT_DIR$/js/ui/ui.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/util.js" afterPath="$PROJECT_DIR$/js/util.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\js\systems\clp.js" afterPath="$PROJECT_DIR$/js/systems/mlb/clp.js" />
+      <change type="MOVED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\js\systems\pp.js" afterPath="$PROJECT_DIR$/js/systems/mlb/pp.js" />
+      <change type="MOVED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\js\systems\simple.js" afterPath="$PROJECT_DIR$/js/systems/mlb/simple.js" />
+      <change type="MOVED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\js\systems\simple_parlay.js" afterPath="$PROJECT_DIR$/js/systems/mlb/simple_parlay.js" />
+      <change type="MOVED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\main.html" afterPath="$PROJECT_DIR$/mlb.html" />
     </list>
     <ignored path="backtester.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/main.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374581437107" ignored="false" />
+    <file path="/main.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1375734671531" ignored="false" />
     <file path="/testers.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373829931866" ignored="false" />
     <file path="/better.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373650049167" ignored="false" />
-    <file path="/a.dummy" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374580473422" ignored="false" />
-    <file path="/styles.css" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373637659073" ignored="false" />
+    <file path="/a.dummy" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377976959965" ignored="false" />
+    <file path="/styles.css" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382279487249" ignored="false" />
     <file path="/backtester.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373827585246" ignored="false" />
     <file path="C:/projects/store_apps/src/sheriff/client/logs/main.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373470977345" ignored="false" />
     <file path="C:/projects/store_apps/src/sheriff/client/logs/logs.css" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373470977345" ignored="false" />
     <file path="/logs.css" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373368534848" ignored="false" />
     <file path="C:/projects/store_apps/src/sheriff/client/logs/logs.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373470977345" ignored="false" />
     <file path="/logs.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373372342943" ignored="false" />
-    <file path="C:/projects/store_apps/src/sheriff/client/internal/protected.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374565206660" ignored="false" />
+    <file path="C:/projects/store_apps/src/sheriff/client/internal/protected.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374839507567" ignored="false" />
     <file path="/loader.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373302538206" ignored="false" />
     <file path="C:/projects/store_apps/src/resources/protected/logger.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373470977345" ignored="false" />
     <file path="/logger.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373372289391" ignored="false" />
-    <file path="C:/projects/store_apps/src/sheriff/client/internal/private.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374498577430" ignored="false" />
+    <file path="C:/projects/store_apps/src/sheriff/client/internal/private.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1375099293921" ignored="false" />
     <file path="/a.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373534369933" ignored="false" />
     <file path="C:/projects/store_apps/src/resources/private/installer.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373369470883" ignored="false" />
     <file path="C:/projects/store_apps/src/resources/legacy/codes.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373470977345" ignored="false" />
     <file path="/codes.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373369524548" ignored="false" />
-    <file path="C:/projects/store_apps/src/resources/private/multiplexer.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373470977345" ignored="false" />
-    <file path="/multiplexer.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373369985423" ignored="false" />
+    <file path="C:/projects/store_apps/src/resources/private/multiplexer.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1375099178271" ignored="false" />
+    <file path="/multiplexer.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1375099176690" ignored="false" />
     <file path="C:/projects/store_apps/src/resources/common/ui/form.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373470977345" ignored="false" />
     <file path="/form.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373442880460" ignored="false" />
     <file path="C:/projects/store_apps/src/resources/common/ui/phone.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373470977345" ignored="false" />
@@ -61,63 +125,82 @@
     <file path="/button.scss" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373454972329" ignored="false" />
     <file path="C:/projects/store_apps/src/resources/common/builtin.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373470977345" ignored="false" />
     <file path="C:/projects/store_apps/src/resources/common/ui/core.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373470977345" ignored="false" />
-    <file path="C:/projects/store_apps/src/resources/shell/shell.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374567294896" ignored="false" />
+    <file path="C:/projects/store_apps/src/resources/shell/shell.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374839332614" ignored="false" />
     <file path="C:/projects/store_apps/src/resources/scss/ui/phone.scss" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373470977345" ignored="false" />
-    <file path="/tests.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374581961139" ignored="false" />
+    <file path="/tests.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382280006166" ignored="false" />
     <file path="/BetterSpec.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373479602797" ignored="false" />
-    <file path="/Dummy.txt" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374501528549" ignored="false" />
+    <file path="/Dummy.txt" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382186119487" ignored="false" />
     <file path="C:/projects/store_apps/tools/build/build.gradle" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373634604158" ignored="false" />
     <file path="/build.gradle" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373634367969" ignored="false" />
     <file path="/filters_ui.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373643972716" ignored="false" />
-    <file path="/ui.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374579571140" ignored="false" />
+    <file path="/ui.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382278373773" ignored="false" />
     <file path="C:/projects/store_apps/tools/build/config.json" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373634882427" ignored="false" />
     <file path="/config.json" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373634828738" ignored="false" />
     <file path="C:/projects/store_apps/tools/build/css.cmd" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373631022750" ignored="false" />
-    <file path="/pp.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374580217504" ignored="false" />
-    <file path="/stats.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374577082951" ignored="false" />
-    <file path="/aggregators.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374577174637" ignored="false" />
-    <file path="/filters_manager.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374478740374" ignored="false" />
-    <file path="/data_helper.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374483058221" ignored="false" />
-    <file path="C:/projects/store_apps/src/sheriff/client/common/default.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374565206660" ignored="false" />
-    <file path="C:/projects/store_apps/src/sheriff/client/common/base.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374565206660" ignored="false" />
-    <file path="C:/projects/store_apps/src/sheriff/client/common/ui.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374498577430" ignored="false" />
-    <file path="C:/projects/store_apps/src/sheriff/client/internal/shell.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374565206660" ignored="false" />
-    <file path="C:/projects/store_apps/src/sheriff/client/common/legacy.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374498577430" ignored="false" />
-    <file path="/parlay.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374581790975" ignored="false" />
-    <file path="/bettor.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374502265012" ignored="false" />
-    <file path="C:/projects/store_apps/production/sheriff/client/shell/groups.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374565050585" ignored="false" />
-    <file path="/groups.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374566576217" ignored="false" />
-    <file path="C:/projects/store_apps/src/sheriff/client/shell/assistant.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374565973815" ignored="false" />
-    <file path="/shell.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374567214378" ignored="false" />
-    <file path="C:/projects/store_apps/production/sheriff/client/shell/group.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374565050585" ignored="false" />
-    <file path="C:/projects/store_apps/production/sheriff/client/common/ui.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374565050585" ignored="false" />
-    <file path="C:/projects/store_apps/production/sheriff/client/internal/shell.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374565050585" ignored="false" />
-    <file path="C:/projects/store_apps/production/sheriff/client/shell/search.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374565050585" ignored="false" />
-    <file path="C:/projects/store_apps/production/sheriff/client/shell/shell.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374565050585" ignored="false" />
-    <file path="C:/projects/store_apps/production/sheriff/client/shell/mobile/main.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374565050585" ignored="false" />
-    <file path="C:/projects/store_apps/production/sheriff/client/shell/info.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374565050585" ignored="false" />
-    <file path="C:/projects/store_apps/production/sheriff/client/shell/main.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374565050585" ignored="false" />
-    <file path="C:/projects/store_apps/src/sheriff/client/shell/main.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374565206660" ignored="false" />
-    <file path="C:/projects/store_apps/src/sheriff/client/shell/info.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374565206660" ignored="false" />
-    <file path="C:/projects/store_apps/src/sheriff/client/shell/shell.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374565206660" ignored="false" />
-    <file path="C:/projects/store_apps/src/sheriff/client/shell/groups.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374566576669" ignored="false" />
-    <file path="C:/projects/store_apps/src/sheriff/client/shell/group.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374565206660" ignored="false" />
-    <file path="C:/projects/store_apps/src/sheriff/client/shell/shell.css" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374565206660" ignored="false" />
-    <file path="C:/projects/store_apps/src/sheriff/client/shell/search.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374565206660" ignored="false" />
-    <file path="C:/projects/store_apps/src/assistant/manifest.json" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374566369608" ignored="false" />
-    <file path="C:/projects/store_apps/src/assistant/server/app.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374566415810" ignored="false" />
-    <file path="C:/projects/store_apps/src/assistant/client/app.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374566512503" ignored="false" />
-    <file path="C:/projects/store_apps/src/assistant/client/main.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374566532240" ignored="false" />
-    <file path="C:/projects/store_apps/src/assistant/client/manifest.json" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374567610994" ignored="false" />
-    <file path="C:/projects/store_apps/src/assistant/client/_locales/ru/messages.json" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374567349375" ignored="false" />
-    <file path="/progressionManager.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374579127066" ignored="false" />
-    <file path="/core.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374582156436" ignored="false" />
-    <file path="/parsers.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374579652761" ignored="false" />
-    <file path="/parlay_ui_helper.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374581296058" ignored="false" />
-    <file path="/util.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374578922204" ignored="false" />
-    <file path="/flat_ui_helper.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374582572510" ignored="false" />
-    <file path="/bet.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374582091772" ignored="false" />
-    <file path="/drawer.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374582648018" ignored="false" />
+    <file path="/pp.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377976918631" ignored="false" />
+    <file path="/stats.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377598824862" ignored="false" />
+    <file path="/aggregators.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382278392203" ignored="false" />
+    <file path="/util.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377965936389" ignored="false" />
+    <file path="/simple_series.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377590197014" ignored="false" />
+    <file path="/core.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382279340020" ignored="false" />
+    <file path="/series.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1375732398615" ignored="false" />
+    <file path="/filters_manager.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382282461926" ignored="false" />
+    <file path="/totals_mess.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377602398542" ignored="false" />
+    <file path="/progressionManager.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374831404315" ignored="false" />
+    <file path="C:/projects/store_apps/src/sheriff/client/manifest.json" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1375090153676" ignored="false" />
+    <file path="C:/projects/store_apps/src/sheriff/client/assistant/assistant.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1375099125680" ignored="false" />
+    <file path="C:/projects/store_apps/src/sheriff/client/common/ui.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374839507567" ignored="false" />
+    <file path="C:/projects/store_apps/src/sheriff/client/common/default.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1375099293921" ignored="false" />
+    <file path="C:/projects/store_apps/src/sheriff/client/common/base.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1375099293921" ignored="false" />
+    <file path="/assistant.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1375099124699" ignored="false" />
+    <file path="C:/projects/store_apps/src/sheriff/client/assistant/main.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1375099309959" ignored="false" />
+    <file path="/bet.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382280582605" ignored="false" />
+    <file path="/neither_to_7.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377602426901" ignored="false" />
+    <file path="C:/projects/html_30036_banks/src/js/banks/Favourites.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1375347246635" ignored="false" />
+    <file path="/Favourites.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1375347233018" ignored="false" />
+    <file path="C:/projects/html_30036_banks/project.properties" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1375336325942" ignored="false" />
+    <file path="C:/projects/html_30036_banks/config/6597.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1375342849106" ignored="false" />
+    <file path="C:/projects/html_30036_banks/src/emulator.json" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1375345802133" ignored="false" />
+    <file path="C:/projects/html_30036_banks/config/11000.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1375345088877" ignored="false" />
+    <file path="C:/projects/html_30036_banks/config/10258.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1375345793752" ignored="false" />
+    <file path="C:/projects/store_apps/src/resources/protected/jrpc.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1375358673929" ignored="false" />
+    <file path="/jrpc.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1375359715877" ignored="false" />
+    <file path="C:/projects/store_apps/src/resources/protected/jsonrpc.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1375359721330" ignored="false" />
+    <file path="/road_progressions.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1375736594698" ignored="false" />
+    <file path="/nfl.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382282816016" ignored="false" />
+    <file path="/parlay.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377977217754" ignored="false" />
+    <file path="/mlb.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377590182328" ignored="false" />
+    <file path="/parsers.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377589045333" ignored="false" />
+    <file path="/mlb.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382282786426" ignored="false" />
+    <file path="/data_helper.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377589292453" ignored="false" />
+    <file path="/clp.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377589765984" ignored="false" />
+    <file path="/BettorSpec.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382280369252" ignored="false" />
+    <file path="C:/projects/html_30036_banks/src/pages/9_test.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377780795904" ignored="false" />
+    <file path="/9_test.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377780610631" ignored="false" />
+    <file path="C:/projects/html_30036_banks/src/js/banks/StartParamParser.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377678249991" ignored="false" />
+    <file path="/StartParamParser.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377678249550" ignored="false" />
+    <file path="C:/projects/html_30036_banks/src/pages/9.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377845277259" ignored="false" />
+    <file path="/9.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377845272028" ignored="false" />
+    <file path="/dummy.xml" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377694609777" ignored="false" />
+    <file path="C:/projects/html_30036_banks/src/scss/_CashPaymentView.scss" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377845172789" ignored="false" />
+    <file path="/_CashPaymentView.scss" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377781109312" ignored="false" />
+    <file path="C:/projects/html_30036_banks/src/css/styles.css" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377845207875" ignored="false" />
+    <file path="C:/projects/html_30036_banks/config/3324.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377776587417" ignored="false" />
+    <file path="C:/projects/html_30036_banks/src/js/corejs/maratl/payments.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377777958262" ignored="false" />
+    <file path="C:/projects/html_30036_banks/src/js/views/CashPaymentView.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377846699420" ignored="false" />
+    <file path="/CashPaymentView.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377846686124" ignored="false" />
+    <file path="C:/projects/html_30036_banks/src/js/views/CheckStatusView.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377843486074" ignored="false" />
+    <file path="C:/projects/html_30036_banks/src/js/views/PhoneEnterView.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377843480438" ignored="false" />
+    <file path="/PhoneEnterView.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377843329767" ignored="false" />
+    <file path="C:/projects/html_30036_banks/src/js/corejs/views/CommissionInfoView.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377846638848" ignored="false" />
+    <file path="/CommissionInfoView.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377846634064" ignored="false" />
+    <file path="/nfl.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377970310444" ignored="false" />
+    <file path="/flat_ui_helper.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377974506917" ignored="false" />
+    <file path="/simple.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382279212326" ignored="false" />
+    <file path="/nhl.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382186544702" ignored="false" />
+    <file path="/nhl.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382282810761" ignored="false" />
+    <file path="/nba.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382282803292" ignored="false" />
+    <file path="/nba.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382192849335" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,6 +208,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="Commander">
+    <leftPanel />
+    <rightPanel />
+    <splitter proportion="0.5" />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -132,6 +220,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -168,7 +257,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -178,64 +266,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="core.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/ui/helpers/core.js">
+      <file leaf-file-name="nfl.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/nfl.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="97" column="69" selection-start="2172" selection-end="2172" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="14" column="21" selection-start="700" selection-end="700" vertical-scroll-proportion="0.56086284">
+              <folding>
+                <element signature="n#style#0;n#hr#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testers.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/testers.js">
+      <file leaf-file-name="nhl.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nhl.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="2" column="33" selection-start="47" selection-end="47" vertical-scroll-proportion="-1.6774193">
+              <folding>
+                <element signature="n#style#0;n#hr#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="drawer.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/ui/drawer.js">
+      <file leaf-file-name="filters_manager.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/ui/filters_manager.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="12" selection-start="995" selection-end="995" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pp.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/systems/pp.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="54" selection-start="1537" selection-end="1537" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="flat_ui_helper.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/ui/helpers/flat_ui_helper.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="239" column="55" selection-start="7531" selection-end="7531" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="parlay_ui_helper.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/ui/helpers/parlay_ui_helper.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="39" selection-start="618" selection-end="618" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bet.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/betting/bet.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="113" selection-end="113" vertical-scroll-proportion="0.0">
+            <state line="143" column="19" selection-start="4140" selection-end="4140" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -244,26 +300,65 @@
       <file leaf-file-name="ui.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/ui/ui.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="28" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="core.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/systems/core.js">
+      <file leaf-file-name="flat_ui_helper.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/ui/helpers/flat_ui_helper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="20" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0">
+            <state line="188" column="9" selection-start="5962" selection-end="5962" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="aggregators.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/aggregators.js">
+      <file leaf-file-name="mlb.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mlb.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="49" selection-start="67" selection-end="67" vertical-scroll-proportion="0.0">
+            <state line="2" column="4" selection-start="18" selection-end="56" vertical-scroll-proportion="-1.6774193">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/jQuery/jquery.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="33" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nhl.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/sports/nhl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nba.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/sports/nba.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="24" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nba.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nba.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="33" selection-start="47" selection-end="47" vertical-scroll-proportion="-1.6774193">
+              <folding>
+                <element signature="n#style#0;n#hr#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#select#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -286,22 +381,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/js/util.js" />
-        <option value="$PROJECT_DIR$/js/aggregators.js" />
-        <option value="$PROJECT_DIR$/tests/BettorSpec.js" />
-        <option value="$PROJECT_DIR$/js/parsers.js" />
-        <option value="$PROJECT_DIR$/main.html" />
-        <option value="$PROJECT_DIR$/js/betting/progressionManager.js" />
-        <option value="$PROJECT_DIR$/js/betting/parlay.js" />
-        <option value="$PROJECT_DIR$/tests.html" />
-        <option value="$PROJECT_DIR$/js/betting/bet.js" />
-        <option value="$PROJECT_DIR$/js/systems/core.js" />
         <option value="$PROJECT_DIR$/js/ui/ui.js" />
-        <option value="$PROJECT_DIR$/js/systems/pp.js" />
-        <option value="$PROJECT_DIR$/js/ui/helpers/core.js" />
-        <option value="$PROJECT_DIR$/js/ui/helpers/parlay_ui_helper.js" />
+        <option value="$PROJECT_DIR$/js/aggregators.js" />
+        <option value="$PROJECT_DIR$/data/nba.js" />
+        <option value="$PROJECT_DIR$/js/sports/nba.js" />
+        <option value="$PROJECT_DIR$/js/systems/core.js" />
+        <option value="$PROJECT_DIR$/css/styles.css" />
+        <option value="$PROJECT_DIR$/js/systems/nba/simple.js" />
+        <option value="$PROJECT_DIR$/tests.html" />
+        <option value="$PROJECT_DIR$/tests/BettorSpec.js" />
+        <option value="$PROJECT_DIR$/js/betting/bet.js" />
+        <option value="$PROJECT_DIR$/js/ui/filters_manager.js" />
         <option value="$PROJECT_DIR$/js/ui/helpers/flat_ui_helper.js" />
-        <option value="$PROJECT_DIR$/js/ui/drawer.js" />
+        <option value="$PROJECT_DIR$/mlb.html" />
+        <option value="$PROJECT_DIR$/nba.html" />
+        <option value="$PROJECT_DIR$/nhl.html" />
+        <option value="$PROJECT_DIR$/nfl.html" />
       </list>
     </option>
   </component>
@@ -342,7 +437,7 @@
     <OptionsSetting value="true" id="Edit" />
     <OptionsSetting value="true" id="Undo Check Out" />
     <OptionsSetting value="true" id="Get Latest Version" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="1" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -361,8 +456,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -427,7 +520,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="betting" />
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helpers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -445,8 +542,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backtester" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backtester" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -464,13 +577,16 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Dropbox\bookies\pp_backtest\backtester\js\ui\helpers" />
-      <recent name="C:\Dropbox\bookies\pp_backtest\backtester\js" />
-      <recent name="C:\Dropbox\bookies\pp_backtest\backtester" />
+      <recent name="D:\dropbox\bookies\pp_backtest\backtester\js\systems\nba" />
+      <recent name="D:\dropbox\bookies\pp_backtest\backtester\js\sports" />
+      <recent name="D:\dropbox\bookies\pp_backtest\backtester" />
+      <recent name="D:\dropbox\bookies\pp_backtest\backtester\js\systems\nhl" />
+      <recent name="C:\Dropbox\bookies\pp_backtest\backtester\lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Dropbox\bookies\pp_backtest\backtester\js\betting" />
-      <recent name="C:\Dropbox\bookies\pp_backtest\backtester\js\data" />
+      <recent name="D:\dropbox\bookies\pp_backtest\backtester\js\systems" />
+      <recent name="C:\Dropbox\bookies\pp_backtest\backtester\js\systems" />
+      <recent name="C:\Dropbox\bookies\pp_backtest\backtester\js\systems\mlb" />
       <recent name="C:\Dropbox\bookies\pp_backtest\backtester" />
       <recent name="C:\Dropbox\bookies\pp_backtest\backtester\css" />
     </key>
@@ -547,6 +663,23 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" name="Default" comment="" />
@@ -559,31 +692,31 @@
     <frame x="54" y="-8" width="1634" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32673267" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24968153" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930845" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22502744" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24968153" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15203562" sideWeight="0.6732673" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1513995" sideWeight="0.77497256" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -646,119 +779,126 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="28" selection-start="757" selection-end="757" vertical-scroll-proportion="-5.870968">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/parsers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="45" selection-start="290" selection-end="290" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/betting/progressionManager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="20" selection-start="544" selection-end="544" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/betting/parlay.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="15" selection-start="438" selection-end="438" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="31" selection-start="361" selection-end="361" vertical-scroll-proportion="-9.225806">
+        <state line="15" column="30" selection-start="485" selection-end="485" vertical-scroll-proportion="-12.580646">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/sports/mlb.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/mlb.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="62" selection-start="5998" selection-end="5998" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/BettorSpec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="21" selection-start="2340" selection-end="2340" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/aggregators.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="49" selection-start="67" selection-end="67" vertical-scroll-proportion="0.0">
+        <state line="58" column="20" selection-start="1945" selection-end="1945" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/betting/bet.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="113" selection-end="113" vertical-scroll-proportion="0.0">
+        <state line="85" column="41" selection-start="1980" selection-end="1980" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/systems/core.js">
+    <entry file="file://$PROJECT_DIR$/js/sports/nfl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="20" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/sports/nhl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/sports/nba.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="24" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/jQuery/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="33" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/ui/filters_manager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="143" column="19" selection-start="4140" selection-end="4140" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/ui/ui.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="28" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/systems/pp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="54" selection-start="1537" selection-end="1537" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/ui/helpers/core.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="69" selection-start="2172" selection-end="2172" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/ui/helpers/parlay_ui_helper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="39" selection-start="618" selection-end="618" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/ui/helpers/flat_ui_helper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="239" column="55" selection-start="7531" selection-end="7531" vertical-scroll-proportion="0.0">
+        <state line="188" column="9" selection-start="5962" selection-end="5962" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/ui/drawer.js">
+    <entry file="file://$PROJECT_DIR$/mlb.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="12" selection-start="995" selection-end="995" vertical-scroll-proportion="0.0">
+        <state line="2" column="4" selection-start="18" selection-end="56" vertical-scroll-proportion="-1.6774193">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/testers.js">
+    <entry file="file://$PROJECT_DIR$/nba.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="2" column="33" selection-start="47" selection-end="47" vertical-scroll-proportion="-1.6774193">
+          <folding>
+            <element signature="n#style#0;n#hr#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nhl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="33" selection-start="47" selection-end="47" vertical-scroll-proportion="-1.6774193">
+          <folding>
+            <element signature="n#style#0;n#hr#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nfl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="21" selection-start="700" selection-end="700" vertical-scroll-proportion="0.56086284">
+          <folding>
+            <element signature="n#style#0;n#hr#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

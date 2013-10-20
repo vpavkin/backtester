@@ -1,0 +1,163 @@
+<html>
+<head>
+    <title>VV Backtester 2.0 (NHL)</title>
+    <script src="lib/jQuery/jquery.js"></script>
+    <script src="lib/RGraph/libraries/RGraph.common.core.js"></script>
+    <script src="lib/RGraph/libraries/RGraph.common.dynamic.js"></script>
+    <script src="lib/RGraph/libraries/RGraph.common.tooltips.js"></script>
+    <script src="lib/RGraph/libraries/RGraph.common.effects.js"></script>
+    <script src="lib/RGraph/libraries/RGraph.line.js"></script>
+    <script src="data/nhl.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/sports/nhl.js"></script>
+    <script src="js/data/stats.js"></script>
+    <script src="js/betting/bet.js"></script>
+    <script src="js/betting/parlay.js"></script>
+    <script src="js/betting/progressionManager.js"></script>
+    <script src="js/betting/series.js"></script>
+    <script src="js/aggregators.js"></script>
+    <script src="js/parsers.js"></script>
+    <script src="js/systems/core.js"></script>
+    <script src="js/systems/nhl/simple.js"></script>
+    <script src="js/ui/helpers/core.js"></script>
+    <script src="js/ui/helpers/flat_ui_helper.js"></script>
+    <script src="js/ui/helpers/parlay_ui_helper.js"></script>
+    <script src="js/ui/filters_manager.js"></script>
+    <script src="js/ui/drawer.js"></script>
+    <script src="js/ui/ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script>
+
+        var UNIT_SIZE = 100;
+        var LEAGUE = NHL;
+
+        $(document).ready(function () {
+            FILTERS_MANAGER.init();
+            APP_UI.addSystems();
+        });
+
+    </script>
+</head>
+<body>
+<div class="filters">
+    <div id="by_season">
+        <label class="filter_header">By season:</label>
+        <input id="season_2006" type="checkbox" checked value="2006-2007"/>
+        <label for="season_2006"><span></span>06/07</label>
+        <input id="season_2007" type="checkbox" checked value="2007-2008"/>
+        <label for="season_2007"><span></span>07/08</label>
+        <input id="season_2008" type="checkbox" checked value="2008-2009"/>
+        <label for="season_2008"><span></span>08/09</label>
+        <input id="season_2009" type="checkbox" checked value="2009-2010"/>
+        <label for="season_2009"><span></span>09/10</label>
+        <input id="season_2010" type="checkbox" checked value="2010-2011"/>
+        <label for="season_2010"><span></span>10/11</label>
+        <input id="season_2011" type="checkbox" checked value="2011-2012"/>
+        <label for="season_2011"><span></span>11/12</label>
+        <input id="season_2012" type="checkbox" checked value="2012-2013"/>
+        <label for="season_2012"><span></span>12/13</label>
+        <input id="season_2013" type="checkbox" checked value="2013-2014"/>
+        <label for="season_2013"><span></span>13/14</label>
+    </div>
+    <div id="by_month">
+        <label class="filter_header">By month:</label>
+        <input id="month_september" type="checkbox" checked value="9"/>
+        <label for="month_september"><span></span>September</label>
+        <input id="month_october" type="checkbox" checked value="10"/>
+        <label for="month_october"><span></span>October</label>
+        <input id="month_november" type="checkbox" checked value="11"/>
+        <label for="month_november"><span></span>November</label>
+        <input id="month_december" type="checkbox" checked value="12"/>
+        <label for="month_december"><span></span>December</label>
+        <hr style="margin-right: 20px"/>
+        <input id="month_january" type="checkbox" checked value="1"/>
+        <label for="month_january"><span></span>January</label>
+        <input id="month_february" type="checkbox" checked value="2"/>
+        <label for="month_february"><span></span>February</label>
+        <input id="month_march" type="checkbox" checked value="3"/>
+        <label for="month_march"><span></span>March</label>
+        <input id="month_april" type="checkbox" checked value="4"/>
+        <label for="month_april"><span></span>April</label>
+        <input id="month_may" type="checkbox" checked value="5"/>
+        <label for="month_may"><span></span>May</label>
+        <input id="month_june" type="checkbox" checked value="6"/>
+        <label for="month_june"><span></span>June</label>
+    </div>
+    <div id="by_day">
+        <label class="filter_header">By day:</label>
+        <input id="day_monday" type="checkbox" checked value="1"/>
+        <label for="day_monday"><span></span>Monday</label>
+        <input id="day_tuesday" type="checkbox" checked value="2"/>
+        <label for="day_tuesday"><span></span>Tuesday</label>
+        <input id="day_wednesday" type="checkbox" checked value="3"/>
+        <label for="day_wednesday"><span></span>Wednesday</label>
+        <input id="day_thursday" type="checkbox" checked value="4"/>
+        <label for="day_thursday"><span></span>Thursday</label>
+        <input id="day_friday" type="checkbox" checked value="5"/>
+        <label for="day_friday"><span></span>Friday</label>
+        <input id="day_saturday" type="checkbox" checked value="6"/>
+        <label for="day_saturday"><span></span>Saturday</label>
+        <input id="day_sunday" type="checkbox" checked value="7"/>
+        <label for="day_sunday"><span></span>Sunday</label>
+    </div>
+    <div id="bl_1">
+        <div id="by_team">
+            <label class="filter_header">By team:</label>
+            <select id="teams_teams">
+                <option value="All">All</option>
+            </select>
+        </div>
+        <div id="by_place">
+            <label class="filter_header">By place:</label>
+            <input id="place_home" type="checkbox" checked value="H"/>
+            <label for="place_home"><span></span>Home</label>
+            <input id="place_road" type="checkbox" checked value="R"/>
+            <label for="place_road"><span></span>Road</label>
+        </div>
+        <div id="by_status">
+            <label class="filter_header">By status:</label>
+            <input id="status_favourite" type="checkbox" checked value="F"/>
+            <label for="status_favourite"><span></span>Favourite</label>
+            <input id="status_underdog" type="checkbox" checked value="U"/>
+            <label for="status_underdog"><span></span>Underdog</label>
+        </div>
+    </div>
+    <div id="by_odds">
+        <label class="filter_header">Taken odds:</label>
+        <input id="odds_min" type="checkbox" value="odds_min"/>
+        <label for="odds_min"><span></span>Min = 1</label>
+        <input id="odds_min_val" type="range" value="1" min="1.0" max="3.0" step="0.01"/>
+        <input id="odds_max" type="checkbox" value="odds_max"/>
+        <label for="odds_max"><span></span>Max = 2.5</label>
+        <input id="odds_max_val" type="range" value="2.5" min="1.0" max="3.0" step="0.01"/>
+    </div>
+    <div class="buttons">
+
+    </div>
+</div>
+<div>
+    <canvas id="cvs" width="1280" height="500">[No canvas support]</canvas>
+</div>
+<div class="description">
+</div>
+<div id="tables">
+    <table id="games">
+    </table>
+    <div>
+        <table id="stats">
+        </table>
+        <table id="consecutive-losses">
+        </table>
+        <table id="stats-day">
+        </table>
+        <table id="stats-month">
+        </table>
+        <table id="stats-odds">
+        </table>
+        <table id="stats-bets">
+        </table>
+    </div>
+</div>
+</body>
+</html>
