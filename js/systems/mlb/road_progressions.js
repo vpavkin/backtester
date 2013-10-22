@@ -55,7 +55,7 @@ SYSTEMS.ROAD_PROGRESSIONS = $.extend({}, MLB_SYSTEM_BASE, {
 	},
 
 	process: function (games, context) {
-		var p = context.progressions.resolve(0);
+		var p = context.progressions.resolve(0, progressions.ToWin);
 		var res = [];
 		for (var i = 0; i < games.length; i++) {
 			var g = games[i];

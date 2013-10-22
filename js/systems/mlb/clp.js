@@ -4,10 +4,10 @@ SYSTEMS.CLP = $.extend({}, MLB_SYSTEM_BASE, {
 	DESCRIPTION: "Cliff's Line Picks",
 	process: function(games) {
 		//todo: refactor this
-		var FB = $('#ml_odds_min_val').val();
-		var FT = $('#ml_odds_max_val').val();
-		var DB = $('#spread_odds_min_val').val();
-		var DT = $('#spread_odds_max_val').val();
+		var FB = 1.61;
+		var FT = 1.64;
+		var DB = 1.81;
+		var DT = 1.84;
 
 		console.log(FB, FT, DB, DT);
 		var res = [];

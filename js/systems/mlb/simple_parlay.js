@@ -13,8 +13,6 @@ SYSTEMS.ML_PARLAY = $.extend({}, MLB_SYSTEM_BASE, {
 			B.betHomeML(another);
 			FILTERS_MANAGER.postQualifies(another) && parlay.plays.push(another)
 		});
-		if (!FILTERS_MANAGER.qualifyParlay(parlay))
-			return [];
 		if (parlay.plays.length) {
 			P.risk(parlay, UNIT_SIZE);
 			return [parlay];
@@ -43,8 +41,6 @@ SYSTEMS.ML_OR_SPREAD_PARLAY = $.extend({}, MLB_SYSTEM_BASE, {
 			FILTERS_MANAGER.postQualifies(g) && parlay.plays.push(g);
 			FILTERS_MANAGER.postQualifies(another) && parlay.plays.push(another);
 		});
-		if (!FILTERS_MANAGER.qualifyParlay(parlay))
-			return [];
 		if (parlay.plays.length) {
 			P.risk(parlay, UNIT_SIZE);
 			return [parlay];

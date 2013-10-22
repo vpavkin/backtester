@@ -1,6 +1,7 @@
 progressions.ToWin = function(id, options) {
 	progressions.Base.call(this, id);
-	this.toWin = options.toWin;
+	options |= {};
+	this.toWin = options.toWin || UNIT_SIZE;
 	this.maxTiers = options.maxTiers || Number.MAX_VALUE;
 
 	this.toWinEachStepAmount = function() {

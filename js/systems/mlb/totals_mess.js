@@ -16,12 +16,12 @@ SYSTEMS.TOTALS_MESS = $.extend({}, MLB_SYSTEM_BASE, {
 	//		var triple = [g, B.copyGame(games[1]), B.copyGame(games[2])];
 	//		triple[1].prg = triple[2].prg = progIndex;
 	//		triple.forEach(function(game) {
-	//			func(game, prog.toWinEachStep() / (6 * ( B.BUY_ONE_TOTAL_POINT_ODDS - 1)));
+	//			func(game, prog.toWinEachStepAmount() / (6 * ( B.BUY_ONE_TOTAL_POINT_ODDS - 1)));
 	//		});
 	//		prog.processMany(triple);
 	//		return triple;
 	//	} else {
-	//		func(g, prog.toWinEachStep() / ( B.BUY_ONE_TOTAL_POINT_ODDS - 1));
+	//		func(g, prog.toWinEachStepAmount() / ( B.BUY_ONE_TOTAL_POINT_ODDS - 1));
 	//		prog.process(g);
 	//		return [g];
 	//	}
@@ -60,8 +60,8 @@ SYSTEMS.TOTALS_MESS = $.extend({}, MLB_SYSTEM_BASE, {
 		//		arr.push(B.copyGame(item), B.copyGame(item));
 		//		return arr;
 		//	}, []);
-		//	var toWinEach = prog.toWinEachStep() / (helpers.length + 1);
-		//	var toStakeEach = prog.toWinEachStep() / ((helpers.length + 1) * ( B.BUY_ONE_TOTAL_POINT_ODDS - 1));
+		//	var toWinEach = prog.toWinEachStepAmount() / (helpers.length + 1);
+		//	var toStakeEach = prog.toWinEachStepAmount() / ((helpers.length + 1) * ( B.BUY_ONE_TOTAL_POINT_ODDS - 1));
 		//	prog.moneyLost = toWinEach;
 		//	func(g, toStakeEach);
 		//	prog.process(g);
@@ -77,7 +77,7 @@ SYSTEMS.TOTALS_MESS = $.extend({}, MLB_SYSTEM_BASE, {
 		//	});
 		//	return [g].concat(helpers);
 		//} else {
-		func(g, prog.toWinEachStep() / ( B.BUY_ONE_TOTAL_POINT_ODDS - 1));
+		func(g, prog.toWinEachStepAmount() / ( B.BUY_ONE_TOTAL_POINT_ODDS - 1));
 		prog.process(g);
 		return [g];
 		//}

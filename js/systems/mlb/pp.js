@@ -40,12 +40,14 @@ SYSTEMS.PP = $.extend({}, MLB_SYSTEM_BASE, {
 		}
 
 		res.forEach(function(parlay, index) {
-			var _p = context.progressions.resolve(index);
-			P.win(parlay, _p.toWinEachStep());
+			var _p = context.progressions.resolve(index, progressions.ToWin, {toWin: UNIT_SIZE});
+			P.win(parlay, _p.toWinEachStepAmount());
 
 			_p.process(parlay);
 			parlay.prg = index + 1;
 		});
+
+		STATS.updateMultipleStats(AGGREGATORS.gamesForDay(games[0].D), context);
 		return res;
 	}
 });

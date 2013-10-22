@@ -7,7 +7,7 @@ SYSTEMS.TOTALS_MESS = $.extend({}, MLB_SYSTEM_BASE, {
 	postFilter: false,
 	UNIT_SIZE: 25,
 	N: 3,
-	process: function (games, context) {
+	process: function(games, context) {
 		var res = [];
 		games = MLB.selectFirstGamesEmulated(games, 4);
 		var parlay = {plays: []};
@@ -20,7 +20,7 @@ SYSTEMS.TOTALS_MESS = $.extend({}, MLB_SYSTEM_BASE, {
 		}
 		if (parlay.plays.length < this.N)
 			return res;
-		var prog = context.progressions.resolve(0);
+		var prog = context.progressions.resolve(0, progressions.ToWin);
 		P.win(parlay, prog.toWinSeriesAmount());
 		parlay.prg = 0;
 		prog.process(parlay);

@@ -15,9 +15,9 @@ SYSTEMS.ML_PARLAY_PROGRESSION = $.extend({}, MLB_SYSTEM_BASE, {
 			B.betHomeML(another);
 			FILTERS_MANAGER.postQualifies(another) && parlay.plays.push(another)
 		});
-		if (!FILTERS_MANAGER.qualifyParlay(parlay))
+		if (!parlay.plays.length)
 			return [];
-		var _p = context.progressions.resolve(1);
+		var _p = context.progressions.resolve(1, progressions.ToWin);
 		P.win(parlay, _p.toWinSeriesAmount());
 		_p.process(parlay);
 		parlay.prg = 1;
@@ -47,9 +47,9 @@ SYSTEMS.ML_OR_SPREAD_PARLAY_PROGRESSION = $.extend({}, MLB_SYSTEM_BASE, {
 			FILTERS_MANAGER.postQualifies(g) && parlay.plays.push(g);
 			FILTERS_MANAGER.postQualifies(another) && parlay.plays.push(another);
 		});
-		if (!FILTERS_MANAGER.qualifyParlay(parlay))
+		if (!parlay.plays.length)
 			return [];
-		var _p = context.progressions.resolve(1);
+		var _p = context.progressions.resolve(1, progressions.ToWin);
 		P.win(parlay, _p.toWinSeriesAmount());
 		_p.process(parlay);
 		parlay.prg = 1;
