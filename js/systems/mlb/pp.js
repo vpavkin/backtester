@@ -4,7 +4,7 @@ SYSTEMS.PP = $.extend({}, MLB_SYSTEM_BASE, {
 	BET: BETING_TYPE.PARLAY,
 	MM: MM_TYPE.PROGRESSION,
 	updateStats: true,
-	filterAfter: false,
+	postFilter: false,
 	_fits: function(team, stats) {
 		return stats[team] && stats[team].games > 10 && stats[team].winPercentage() >= 0.54 && stats[team].currentLosingStreak < 3;
 	},

@@ -13,7 +13,10 @@
     <script src="js/data/stats.js"></script>
     <script src="js/betting/bet.js"></script>
     <script src="js/betting/parlay.js"></script>
-    <script src="js/betting/progressionManager.js"></script>
+    <script src="js/betting/progressions/base.js"></script>
+    <script src="js/betting/progressions/manager.js"></script>
+    <script src="js/betting/progressions/fixed.js"></script>
+    <script src="js/betting/progressions/towin.js"></script>
     <script src="js/aggregators.js"></script>
     <script src="js/parsers.js"></script>
     <script src="js/systems/core.js"></script>
@@ -49,7 +52,7 @@
 <div id="mlb-filters" class="filters">
     <div id="bg">MLB</div>
     <div id="by_season">
-        <label class="filter_header">By season:</label>
+        <label class="filter_header">Season:</label>
         <input id="season_2006" type="checkbox" checked value="2006"/>
         <label for="season_2006"><span></span>2006</label>
         <input id="season_2007" type="checkbox" checked value="2007"/>
@@ -68,7 +71,7 @@
         <label for="season_2013"><span></span>2013</label>
     </div>
     <div id="by_month">
-        <label class="filter_header">By month:</label>
+        <label class="filter_header">Month:</label>
         <input id="month_march" type="checkbox" checked value="3"/>
         <label for="month_march"><span></span>March</label>
         <input id="month_april" type="checkbox" checked value="4"/>
@@ -89,7 +92,7 @@
         <label for="month_november"><span></span>November</label>
     </div>
     <div id="by_day">
-        <label class="filter_header">By day:</label>
+        <label class="filter_header">Day:</label>
         <input id="day_monday" type="checkbox" checked value="1"/>
         <label for="day_monday"><span></span>Monday</label>
         <input id="day_tuesday" type="checkbox" checked value="2"/>
@@ -107,20 +110,20 @@
     </div>
     <div id="bl_1">
         <div id="by_team">
-            <label class="filter_header">By team:</label>
+            <label class="filter_header">Team:</label>
             <select id="teams_teams">
                 <option value="All">All</option>
             </select>
         </div>
         <div id="by_place">
-            <label class="filter_header">By place:</label>
+            <label class="filter_header">Place:</label>
             <input id="place_home" type="checkbox" checked value="H"/>
             <label for="place_home"><span></span>Home</label>
             <input id="place_road" type="checkbox" checked value="R"/>
             <label for="place_road"><span></span>Road</label>
         </div>
         <div id="by_status">
-            <label class="filter_header">By status:</label>
+            <label class="filter_header">Status:</label>
             <input id="status_favourite" type="checkbox" checked value="F"/>
             <label for="status_favourite"><span></span>Favourite</label>
             <input id="status_underdog" type="checkbox" checked value="U"/>

@@ -4,7 +4,7 @@ SYSTEMS.TOTALS_MESS = $.extend({}, MLB_SYSTEM_BASE, {
 	BET: BETING_TYPE.SINGLE,
 	MM: MM_TYPE.PROGRESSION,
 	updateStats: false,
-	filterAfter: false,
+	postFilter: false,
 	UNIT_SIZE: 5,
 	N: 3,
 	RECOVERY_SERIES_TO_GO: 0,
@@ -43,12 +43,12 @@ SYSTEMS.TOTALS_MESS = $.extend({}, MLB_SYSTEM_BASE, {
 		var g = B.copyGame(games[gameIndex]);
 		var progIndex = gameIndex * 2 + (func == B.MLB.betMinUnder ? 0 : 1);
 		var prog = context.progressions.resolve(g.prg = progIndex);
-		if (prog.step == 11) {
+		if (prog.tier == 11) {
 			this.RECOVERY_SERIES_TO_GO += 20;
 			prog.close();
 			prog = context.progressions.resolve(progIndex);
 		}
-		if (prog.step == 0 && this.RECOVERY_SERIES_TO_GO > 0) {
+		if (prog.tier == 0 && this.RECOVERY_SERIES_TO_GO > 0) {
 			this.RECOVERY_SERIES_TO_GO--;
 			prog.toWin *= this.RECOVERY_MULTIPLIER;
 			prog.RECOVERY = true;
@@ -72,7 +72,7 @@ SYSTEMS.TOTALS_MESS = $.extend({}, MLB_SYSTEM_BASE, {
 		//		helperProg.toWin = 0;
 		//		helperProg.moneyLost += toWinEach;
 		//		var f = hProgIndex % 2 ? B.betMinUnder : B.betMaxOver;
-		//		f(helper, helperProg.toWinSeries() / ( B.BUY_ONE_TOTAL_POINT_ODDS - 1));
+		//		f(helper, helperProg.toWinSeriesAmount() / ( B.BUY_ONE_TOTAL_POINT_ODDS - 1));
 		//		helperProg.process(helper)
 		//	});
 		//	return [g].concat(helpers);

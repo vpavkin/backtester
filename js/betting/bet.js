@@ -10,19 +10,19 @@ var BET_TYPE = {
 
 var B = {
 
-	getAmount: function (amount) {
+	getAmount: function(amount) {
 		return (amount == undefined || amount == null) ? UNIT_SIZE : amount;
 	},
-	clearGame: function (g) {
+	clearGame: function(g) {
 		g.result = g.takenBet = g.takenTeam = g.takenOdds = g.accumulatedResult = g.betParam = g.betString = null;
 	},
-	copyGame: function (g) {
+	copyGame: function(g) {
 		return $.extend({}, g);
 	},
-	isFavHome: function (g) {
+	isFavHome: function(g) {
 		return g.F == "H";
 	},
-	getOdds: function (g, place, betType) {
+	getOdds: function(g, place, betType) {
 		if (betType == "ML")
 			return g[place + "_ML"];
 		else if (betType == "DefaultSpread") {
@@ -31,24 +31,31 @@ var B = {
 		else
 			return 0;
 	},
-	isWithinOddRange: function (g, place, betType, start, end) {
+	getTeamMLOdds: function(g, team) {
+		if (g.H == team)
+			return g["H_ML"];
+		else if (g.R == team)
+			return g["R_ML"];
+		return 0;
+	},
+	isWithinOddRange: function(g, place, betType, start, end) {
 		var odd = B.getOdds(g, place, betType);
 		return odd >= start && odd <= end;
 	},
-	W: function (g, odds) {
+	W: function(g, odds) {
 		g.result = g.stake * (odds - 1);
 	},
-	L: function (g) {
+	L: function(g) {
 		g.result = -g.stake;
 	},
-	P: function (g) {
+	P: function(g) {
 		g.result = 0
 	},
-	WL: function (g, odds, flag) {
+	WL: function(g, odds, flag) {
 		g.takenOdds = odds;
 		flag ? B.W(g, odds) : B.L(g);
 	},
-	WLP: function (g, odds, flag) {
+	WLP: function(g, odds, flag) {
 		g.takenOdds = odds;
 		if (flag == 1)
 			B.W(g, odds);
@@ -57,21 +64,21 @@ var B = {
 		else
 			B.L(g);
 	},
-	betHomeML: function (g, amount) {
+	betHomeML: function(g, amount) {
 		g.stake = B.getAmount(amount);
 		g.takenTeam = g.H;
 		g.takenBet = BET_TYPE.ML;
 		g.betString = g.takenTeam + " " + g.takenBet;
 		B.WL(g, g.H_ML, g.H_ML_R);
 	},
-	betRoadML: function (g, amount) {
+	betRoadML: function(g, amount) {
 		g.stake = B.getAmount(amount);
 		g.takenTeam = g.R;
 		g.takenBet = BET_TYPE.ML;
 		g.betString = g.takenTeam + " " + g.takenBet;
 		B.WL(g, g.R_ML, g.R_ML_R);
 	},
-	betHomeSpread: function (g, amount) {
+	betHomeSpread: function(g, amount) {
 		g.stake = B.getAmount(amount);
 		g.takenTeam = g.H;
 		g.betParam = g.H_S;
@@ -83,7 +90,7 @@ var B = {
 			g.takenBet = BET_TYPE.DOG_SP;
 		}
 	},
-	betRoadSpread: function (g, amount) {
+	betRoadSpread: function(g, amount) {
 		g.stake = B.getAmount(amount);
 		g.takenTeam = g.R;
 		g.betParam = g.R_S;
@@ -95,27 +102,36 @@ var B = {
 			g.takenBet = BET_TYPE.FAV_SP;
 		}
 	},
-	betFavML: function (g, amount) {
+	betFavML: function(g, amount) {
 		B.isFavHome(g) ?
 			B.betHomeML(g, amount) :
 			B.betRoadML(g, amount)
 	},
-	betDogML: function (g, amount) {
+	betDogML: function(g, amount) {
 		B.isFavHome(g) ?
 			B.betRoadML(g, amount) :
 			B.betHomeML(g, amount)
 	},
-	betDogSpread: function (g, amount) {
+	betDogSpread: function(g, amount) {
 		B.isFavHome(g) ?
 			B.betRoadSpread(g, amount) :
 			B.betHomeSpread(g, amount)
 	},
-	betFavSpread: function (g, amount) {
+	betTeamML: function(g, amount, team) {
+		if (g.H == team) {
+			B.betHomeML(g, amount)
+		} else if (g.R == team) {
+			B.betRoadML(g, amount)
+		} else {
+			alert("No such team '" + team + "' in the game!")
+		}
+	},
+	betFavSpread: function(g, amount) {
 		B.isFavHome(g) ?
 			B.betHomeSpread(g, amount) :
 			B.betRoadSpread(g, amount)
 	},
-	betOver: function (g, amount) {
+	betOver: function(g, amount) {
 		g.stake = B.getAmount(amount);
 		g.betParam = g["O/U_L"];
 		g.takenTeam = "";
@@ -123,7 +139,7 @@ var B = {
 		B.WLP(g, g.O_L, g.O_R);
 		g.betString = g.takenBet + " " + g.betParam;
 	},
-	betUnder: function (g, amount) {
+	betUnder: function(g, amount) {
 		g.stake = B.getAmount(amount);
 		g.betParam = g["O/U_L"];
 		g.takenTeam = "";
@@ -133,7 +149,7 @@ var B = {
 	},
 
 	MLB: {
-		betFavReducedSpread: function (g, amount) {
+		betFavReducedSpread: function(g, amount) {
 			g.stake = B.getAmount(amount);
 			g.takenBet = BET_TYPE.FAV_SP_RED;
 			var homeOverRoad = g["H_R"] - g["R_R"];
@@ -146,7 +162,7 @@ var B = {
 			}
 			g.betString = g.takenTeam + " -1";
 		},
-		betMinUnder: function (g, amount) {
+		betMinUnder: function(g, amount) {
 			g.stake = B.getAmount(amount);
 			g.takenTeam = "";
 			var newLine = Number(g["O/U_L"]) - 1;
@@ -155,7 +171,7 @@ var B = {
 			B.WLP(g, B.BUY_ONE_TOTAL_POINT_ODDS, (g.T < newLine ? 1 : (g.T == newLine ? 0.5 : 0)));
 			g.betString = g.takenBet + " " + g.betParam;
 		},
-		betMaxOver: function (g, amount) {
+		betMaxOver: function(g, amount) {
 			g.stake = B.getAmount(amount);
 			g.takenTeam = "";
 			var newLine = Number(g["O/U_L"]) + 1;
@@ -165,7 +181,7 @@ var B = {
 			g.betString = g.takenBet + " " + g.betParam;
 		},
 
-		betNeitherRaceTo: function (g, amount, to, odds) {
+		betNeitherRaceTo: function(g, amount, to, odds) {
 			g.stake = B.getAmount(amount);
 			g.takenTeam = "";
 			g.takenBet = "Neither race to";
@@ -175,7 +191,7 @@ var B = {
 		},
 
 		//todo: refactor buying totals points when it's needed
-		betUnderBuy: function (g, buy, amount) {
+		betUnderBuy: function(g, buy, amount) {
 			if (!buy) {
 				B.betUnder(g, amount);
 				return
@@ -205,7 +221,7 @@ var B = {
 			g.takenOdds = odds;
 		},
 		//todo: refactor buying totals points
-		betOverBuy: function (g, buy, amount) {
+		betOverBuy: function(g, buy, amount) {
 			if (!buy) {
 				B.betOver(g, amount);
 				return

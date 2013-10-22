@@ -3,7 +3,7 @@ SYSTEMS.PP = $.extend({}, NFL_SYSTEM_BASE, {
 	DESCRIPTION: "",
 	BET: BETING_TYPE.PARLAY,
 	MM: MM_TYPE.PROGRESSION,
-	filterAfter: false,
+	postFilter: false,
 
 	process: function (games, context) {
 		var res = [];
@@ -22,7 +22,7 @@ SYSTEMS.PP = $.extend({}, NFL_SYSTEM_BASE, {
 			curParlay.plays.push(g)
 		}
 		var _p = context.progressions.resolve(1);
-		P.win(curParlay, _p.toWinSeries());
+		P.win(curParlay, _p.toWinSeriesAmount());
 		_p.process(curParlay);
 		curParlay.prg = 1;
 		return [curParlay];

@@ -10,93 +10,94 @@ var FILTERS = {
 	odds: {filter: false}
 };
 
-var FILTERS_MANAGER = {
-	_initSeasons: function () {
+var FM, FILTERS_MANAGER;
+FILTERS_MANAGER = FM = {
+	_initSeasons: function() {
 
 		this._seasonInputs = $('input[id^="season_"]');
-		this._seasonInputs.on('change', function () {
+		this._seasonInputs.on('change', function() {
 			FILTERS.years.filter = false;
-			FILTERS_MANAGER._seasonInputs.each(function (ind, el) {
+			FM._seasonInputs.each(function(ind, el) {
 				if (!(FILTERS.years[el.value] = $(el).prop("checked")))
 					FILTERS.years.filter = true;
 			});
 			console.log(FILTERS.years);
 		})
 	},
-	_initMonths: function () {
+	_initMonths: function() {
 
 		this._monthInputs = $('input[id^="month_"]');
-		this._monthInputs.on('change', function () {
+		this._monthInputs.on('change', function() {
 			FILTERS.months.filter = false;
-			FILTERS_MANAGER._monthInputs.each(function (ind, el) {
+			FM._monthInputs.each(function(ind, el) {
 				if (!(FILTERS.months[el.value] = $(el).prop("checked")))
 					FILTERS.months.filter = true;
 			});
 			console.log(FILTERS.months);
 		})
 	},
-	_initDays: function () {
+	_initDays: function() {
 
 		this._dayInputs = $('input[id^="day_"]');
-		this._dayInputs.on('change', function () {
+		this._dayInputs.on('change', function() {
 			FILTERS.days.filter = false;
-			FILTERS_MANAGER._dayInputs.each(function (ind, el) {
+			FM._dayInputs.each(function(ind, el) {
 				if (!(FILTERS.days[el.value] = $(el).prop("checked")))
 					FILTERS.days.filter = true;
 			});
 			console.log(FILTERS.days);
 		})
 	},
-	_initPlace: function () {
+	_initPlace: function() {
 		this._placeInputs = $('input[id^="place_"]');
-		this._placeInputs.on('change', function () {
+		this._placeInputs.on('change', function() {
 			FILTERS.place.filter = false;
-			FILTERS_MANAGER._placeInputs.each(function (ind, el) {
+			FM._placeInputs.each(function(ind, el) {
 				if (!(FILTERS.place[el.value] = $(el).prop("checked")))
 					FILTERS.place.filter = true;
 			});
 			console.log(FILTERS.place);
 		})
 	},
-	_initStatus: function () {
+	_initStatus: function() {
 		this._statusInputs = $('input[id^="status_"]');
-		this._statusInputs.on('change', function () {
+		this._statusInputs.on('change', function() {
 			FILTERS.status.filter = false;
-			FILTERS_MANAGER._statusInputs.each(function (ind, el) {
+			FM._statusInputs.each(function(ind, el) {
 				if (!(FILTERS.status[el.value] = $(el).prop("checked")))
 					FILTERS.status.filter = true;
 			});
 			console.log(FILTERS.status);
 		})
 	},
-	_initTeam: function () {
+	_initTeam: function() {
 		var ts = this._teamSelect = $('#teams_teams');
-		LEAGUE.TEAMS.forEach(function (item) {
+		LEAGUE.TEAMS.forEach(function(item) {
 			ts.append("<option value='" + item + "'>" + item + "</option> ");
 		});
-		this._teamSelect.on('change', function () {
-			FILTERS.team.filter = (FILTERS.team.team = FILTERS_MANAGER._teamSelect.val()) != "All";
+		this._teamSelect.on('change', function() {
+			FILTERS.team.filter = (FILTERS.team.team = FM._teamSelect.val()) != "All";
 			console.log(FILTERS.team);
 		})
 	},
-	_initOdds: function () {
+	_initOdds: function() {
 		this._oddsInputs = $('#odds_min,#odds_max');
-		this._oddsInputs.on('change', function () {
+		this._oddsInputs.on('change', function() {
 			FILTERS.odds.filter = false;
-			FILTERS_MANAGER._oddsInputs.each(function (ind, el) {
+			FM._oddsInputs.each(function(ind, el) {
 				if (FILTERS.odds[el.value] = $(el).prop("checked"))
 					FILTERS.odds.filter = true;
 			});
 			console.log(FILTERS.odds);
 		});
-		$('#odds_min_val').change(function (e) {
+		$('#odds_min_val').change(function(e) {
 			$("label[for='odds_min']").html("<span></span>Min = " + e.target.value);
 		});
-		$('#odds_max_val').change(function (e) {
+		$('#odds_max_val').change(function(e) {
 			$("label[for='odds_max']").html("<span></span>Max = " + e.target.value);
 		});
 	},
-	init: function () {
+	init: function() {
 		this._initSeasons();
 		this._initMonths();
 		this._initDays();
@@ -106,20 +107,58 @@ var FILTERS_MANAGER = {
 		this._initOdds();
 	},
 
-	preQualifies: function (g) {
-		if (FILTERS.years.filter)
-			if (!FILTERS.years[g.SEAS])
+	year: function(g) {
+		return !(FILTERS.years.filter && !FILTERS.years[g.SEAS])
+	},
+	month: function(g) {
+		return !(FILTERS.months.filter && !FILTERS.months[g.M])
+	},
+	day: function(g) {
+		return !(FILTERS.days.filter && !FILTERS.days[g.DoW])
+	},
+	team: function(g, team) {
+		return !(g.H != team && g.R != team);
+	},
+	place: function(g, team) {
+		if (FILTERS.place.filter) {
+			if (!FILTERS.place.H && g.H == team)
 				return false;
-		if (FILTERS.months.filter)
-			if (!FILTERS.months[g.M])
+			if (!FILTERS.place.R && g.R == team)
 				return false;
-		if (FILTERS.days.filter)
-			if (!FILTERS.days[g.DoW])
+		}
+		return true;
+	},
+	status: function(g, team) {
+		if (FILTERS.status.filter) {
+			if (!FILTERS.status.U && g[g.F] != team)
 				return false;
+			if (!FILTERS.status.F && g[g.F] == team)
+				return false;
+		}
+		return true;
+	},
+	takenOdds: function(g) {
+		if (FILTERS.odds.filter) {
+			if (FILTERS.odds.odds_min && g.takenOdds < Number($('#odds_min_val')[0].value))
+				return false;
+			if (FILTERS.odds.odds_max && g.takenOdds > Number($('#odds_max_val')[0].value))
+				return false;
+		}
+		return true;
+	},
+	preQualifies: function(g) {
+		if (!FM.year(g) || !FM.month(g) || !FM.day(g))
+			return false;
+		if (FILTERS.team.filter) {
+			var team = FILTERS.team.team;
+			if (!FM.team(g, team) || !FM.place(g, team) || !FM.status(g, team))
+				return false
+		}
 		return true;
 	},
 
-	afterQualifies: function (g) {
+	postQualifies: function(g) {
+
 		if (FILTERS.team.filter)
 			if (!(FILTERS.team.team == g.takenTeam))
 				return false;
@@ -135,21 +174,15 @@ var FILTERS_MANAGER = {
 			if (!FILTERS.status.F && g[g.F] == g.takenTeam)
 				return false;
 		}
-		if (FILTERS.odds.filter) {
-			if (FILTERS.odds.odds_min && g.takenOdds < Number($('#odds_min_val')[0].value))
-				return false;
-			if (FILTERS.odds.odds_max && g.takenOdds > Number($('#odds_max_val')[0].value))
-				return false;
-		}
-		return true
+		return FM.takenOdds(g);
 	},
 
-	preFilterGames: function (picks) {
-		return picks.filter(FILTERS_MANAGER.preQualifies);
+	preFilterGames: function(picks) {
+		return picks.filter(FM.preQualifies);
 	},
 
-	afterFilterGames: function (picks) {
-		return picks.filter(FILTERS_MANAGER.afterQualifies)
+	postFilterGames: function(picks) {
+		return picks.filter(FM.postQualifies)
 	}
 };
 

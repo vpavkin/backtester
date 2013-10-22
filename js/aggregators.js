@@ -1,20 +1,20 @@
 var AGGREGATORS = {
 
-	_context: function (LEAGUE) {
+	_context: function(LEAGUE) {
 		var res = {
 			seasons: {},
-			progressions: new ProgressionManager()
+			progressions: new progressions.Manager()
 		};
-		LEAGUE.SEASONS.forEach(function (season) {
+		LEAGUE.SEASONS.forEach(function(season) {
 			res.seasons[season] = {stats: {}};
-			LEAGUE.TEAMS.forEach(function (team) {
+			LEAGUE.TEAMS.forEach(function(team) {
 				res.seasons[season].stats[team] = new StatsObject(season);
 			});
 		});
 		return res
 	},
 
-	eachGameDay: function (callback) {
+	eachGameDay: function(callback) {
 		var current_date = "";
 		for (var i = 0; i < GAMES.length; i++) {
 			if (GAMES[i].D != current_date) {
@@ -24,7 +24,7 @@ var AGGREGATORS = {
 		}
 	},
 
-	eachNFLWeek: function (callback) {
+	eachNFLWeek: function(callback) {
 		var current_week = "";
 		for (var i = 0; i < GAMES.length; i++) {
 			if (GAMES[i].W != current_week) {
@@ -34,33 +34,33 @@ var AGGREGATORS = {
 		}
 	},
 
-	gamesForDay: function (date) {
-		return GAMES.filter(function (item) {
+	gamesForDay: function(date) {
+		return GAMES.filter(function(item) {
 			return item.D == date.toString();
 		})
 	},
 
-	_daily: function (LEAGUE, system, parser) {
+	_daily: function(LEAGUE, system, parser) {
 		var context = $.extend(AGGREGATORS._context(LEAGUE), system.context ? system.context() : {});
 		var output = [];
 		var filteredGames = FILTERS_MANAGER.preFilterGames(GAMES);
-		var days = filteredGames.reduce(function (d, game) {
+		var days = filteredGames.reduce(function(d, game) {
 			d[game.D] || (d[game.D] = []);
 			d[game.D].push(game);
 			return d;
 		}, {});
 
-		AGGREGATORS.eachGameDay(function (D) {
+		AGGREGATORS.eachGameDay(function(D) {
 			if (days[D]) {
 				var res = system.process(days[D], context);
-				output.push(system.filterAfter ? FILTERS_MANAGER.afterFilterGames(res) : res);
+				output.push(system.postFilter ? FILTERS_MANAGER.postFilterGames(res) : res);
 			}
 		});
 
 		return parser(output);
 	},
 
-	_custom: function (LEAGUE, system, parser) {
+	_custom: function(LEAGUE, system, parser) {
 		if (system.updateStats) {
 			alert("Custom aggregator can't update stats");
 			return;
@@ -70,33 +70,33 @@ var AGGREGATORS = {
 		var context = $.extend(AGGREGATORS._context(LEAGUE), system.context ? system.context() : {});
 		var filteredGames = FILTERS_MANAGER.preFilterGames(GAMES);
 		var seriess = system.prepareGames(filteredGames);
-		seriess.forEach(function (s) {
+		seriess.forEach(function(s) {
 			var res = system.process(s.games, context);
-			output.push(system.filterAfter ? FILTERS_MANAGER.afterFilterGames(res) : res);
+			output.push(system.postFilter ? FILTERS_MANAGER.postFilterGames(res) : res);
 		});
 		return parser(output);
 	},
 
 	MLB: {
 
-		daily: function (system, parser) {
+		daily: function(system, parser) {
 			return AGGREGATORS._daily(MLB, system, parser);
 		},
-		custom: function (system, parser) {
+		custom: function(system, parser) {
 			return AGGREGATORS._custom(MLB, system, parser);
 		},
-		series: function (system, parser) {
+		series: function(system, parser) {
 			var context = $.extend(AGGREGATORS.MLB._context(MLB), system.context ? system.context() : {});
 			var output = [];
 			var filteredGames = FILTERS_MANAGER.preFilterGames(GAMES);
-			var days = filteredGames.reduce(function (d, game) {
+			var days = filteredGames.reduce(function(d, game) {
 				d[game.D] || (d[game.D] = []);
 				d[game.D].push(game);
 				return d;
 			}, {});
 			var vs = {};
 			for (var day in days) {
-				days[day].forEach(function (game) {
+				days[day].forEach(function(game) {
 					var id = game.H + "-" + game.R;
 					vs[id] || (vs[id] = []);
 					vs[id].push(game);
@@ -104,7 +104,7 @@ var AGGREGATORS = {
 			}
 			var vs_splitted = {};
 			for (var p in vs) {
-				vs_splitted[p] = vs[p].reduce(function (arr, item) {
+				vs_splitted[p] = vs[p].reduce(function(arr, item) {
 					var l;
 					var s = arr.last();
 					s && (l = s.games.last());
@@ -116,7 +116,7 @@ var AGGREGATORS = {
 					return arr;
 				}, []);
 
-				vs_splitted[p] = vs_splitted[p].filter(function (item) {
+				vs_splitted[p] = vs_splitted[p].filter(function(item) {
 					return item.games.length > 2;
 				})
 			}
@@ -127,23 +127,23 @@ var AGGREGATORS = {
 	},
 	NFL: {
 
-		daily: function (system, parser) {
+		daily: function(system, parser) {
 			return AGGREGATORS._daily(NFL, system, parser);
 		},
-		weekly: function (system, parser) {
+		weekly: function(system, parser) {
 			var context = $.extend(AGGREGATORS._context(NFL), system.context ? system.context() : {});
 			var output = [];
 			var filteredGames = FILTERS_MANAGER.preFilterGames(GAMES);
-			var weeks = filteredGames.reduce(function (d, game) {
+			var weeks = filteredGames.reduce(function(d, game) {
 				d[game.W] || (d[game.W] = []);
 				d[game.W].push(game);
 				return d;
 			}, {});
 
-			AGGREGATORS.eachNFLWeek(function (D) {
+			AGGREGATORS.eachNFLWeek(function(D) {
 				if (weeks[D]) {
 					var res = system.process(weeks[D], context);
-					output.push(system.filterAfter ? FILTERS_MANAGER.afterFilterGames(res) : res);
+					output.push(system.postFilter ? FILTERS_MANAGER.postFilterGames(res) : res);
 				}
 			});
 
@@ -152,12 +152,12 @@ var AGGREGATORS = {
 	},
 	NHL: {
 
-		daily: function (system, parser) {
+		daily: function(system, parser) {
 			return AGGREGATORS._daily(NHL, system, parser);
 		}
 	},
 	NBA: {
-		daily: function (system, parser) {
+		daily: function(system, parser) {
 			return AGGREGATORS._daily(NBA, system, parser);
 		}
 	}

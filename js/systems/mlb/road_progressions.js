@@ -5,7 +5,7 @@ SYSTEMS.ROAD_PROGRESSIONS = $.extend({}, MLB_SYSTEM_BASE, {
 	MM: MM_TYPE.PROGRESSION,
 	AGGREGATOR: AGGREGATOR_TYPE.CUSTOM,
 	updateStats: false,
-	filterAfter: false,
+	postFilter: false,
 	UNIT_SIZE: 100,
 
 	prepareGames: function (all_games) {
@@ -60,7 +60,7 @@ SYSTEMS.ROAD_PROGRESSIONS = $.extend({}, MLB_SYSTEM_BASE, {
 		for (var i = 0; i < games.length; i++) {
 			var g = games[i];
 			g.prg = "";
-			B.betHomeML(g, p.toWinSeries() / (g.H_ML - 1));
+			B.betHomeML(g, p.toWinSeriesAmount() / (g.H_ML - 1));
 			res.push(g);
 			p.process(g);
 			if (p.closed)

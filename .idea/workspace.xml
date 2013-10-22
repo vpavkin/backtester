@@ -2,16 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Dropbox\bookies\pp_backtest\backtester\js\systems\mlb\mlb_system_base.js" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/betting/progressions/base.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/betting/progressions/fixed.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/betting/progressions/manager.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/systems/nhl/simpleABC.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/systems/nhl/simpleToWin4Tier.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/betting/progressions/towin.js" />
+      <change type="DELETED" beforePath="C:\Dropbox\bookies\pp_backtest\backtester\js\betting\progressionManager.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/aggregators.js" afterPath="$PROJECT_DIR$/js/aggregators.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/betting/bet.js" afterPath="$PROJECT_DIR$/js/betting/bet.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/systems/core.js" afterPath="$PROJECT_DIR$/js/systems/core.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/ui/helpers/core.js" afterPath="$PROJECT_DIR$/js/ui/helpers/core.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/ui/filters_manager.js" afterPath="$PROJECT_DIR$/js/ui/filters_manager.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mlb.html" afterPath="$PROJECT_DIR$/mlb.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nba.html" afterPath="$PROJECT_DIR$/nba.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/systems/mlb/neither_to_7.js" afterPath="$PROJECT_DIR$/js/systems/mlb/neither_to_7.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nfl.html" afterPath="$PROJECT_DIR$/nfl.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nhl.html" afterPath="$PROJECT_DIR$/nhl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/betting/progressionManager.js" afterPath="$PROJECT_DIR$/js/betting/progressionManager.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/data/stats.js" afterPath="$PROJECT_DIR$/js/data/stats.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/css/styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/nhl.js" afterPath="$PROJECT_DIR$/data/nhl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/systems/mlb/pp.js" afterPath="$PROJECT_DIR$/js/systems/mlb/pp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/systems/nfl/pp.js" afterPath="$PROJECT_DIR$/js/systems/nfl/pp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/systems/mlb/road_progressions.js" afterPath="$PROJECT_DIR$/js/systems/mlb/road_progressions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/systems/mlb/simple_parlay.js" afterPath="$PROJECT_DIR$/js/systems/mlb/simple_parlay.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/systems/mlb/simple_parlay_progression.js" afterPath="$PROJECT_DIR$/js/systems/mlb/simple_parlay_progression.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/systems/mlb/totals_mess.js" afterPath="$PROJECT_DIR$/js/systems/mlb/totals_mess.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="backtester.iws" />
@@ -19,7 +33,7 @@
     <file path="/main.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1375734671531" ignored="false" />
     <file path="/testers.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373829931866" ignored="false" />
     <file path="/better.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373650049167" ignored="false" />
-    <file path="/a.dummy" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382427138734" ignored="false" />
+    <file path="/a.dummy" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382445608415" ignored="false" />
     <file path="/styles.css" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382426446443" ignored="false" />
     <file path="/backtester.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373827585246" ignored="false" />
     <file path="C:/projects/store_apps/src/sheriff/client/logs/main.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373470977345" ignored="false" />
@@ -68,14 +82,14 @@
     <file path="C:/projects/store_apps/tools/build/css.cmd" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373631022750" ignored="false" />
     <file path="/pp.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377976918631" ignored="false" />
     <file path="/stats.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382427532937" ignored="false" />
-    <file path="/aggregators.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382278392203" ignored="false" />
+    <file path="/aggregators.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382439814134" ignored="false" />
     <file path="/util.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377965936389" ignored="false" />
     <file path="/simple_series.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377590197014" ignored="false" />
     <file path="/core.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382425204456" ignored="false" />
     <file path="/series.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1375732398615" ignored="false" />
-    <file path="/filters_manager.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382282461926" ignored="false" />
+    <file path="/filters_manager.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382446885079" ignored="false" />
     <file path="/totals_mess.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377602398542" ignored="false" />
-    <file path="/progressionManager.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382428090679" ignored="false" />
+    <file path="/progressionManager.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382439171996" ignored="false" />
     <file path="C:/projects/store_apps/src/sheriff/client/manifest.json" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1375090153676" ignored="false" />
     <file path="C:/projects/store_apps/src/sheriff/client/assistant/assistant.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1375099125680" ignored="false" />
     <file path="C:/projects/store_apps/src/sheriff/client/common/ui.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374839507567" ignored="false" />
@@ -83,7 +97,7 @@
     <file path="C:/projects/store_apps/src/sheriff/client/common/base.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1375099293921" ignored="false" />
     <file path="/assistant.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1375099124699" ignored="false" />
     <file path="C:/projects/store_apps/src/sheriff/client/assistant/main.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1375099309959" ignored="false" />
-    <file path="/bet.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382280582605" ignored="false" />
+    <file path="/bet.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382445890218" ignored="false" />
     <file path="/neither_to_7.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377602426901" ignored="false" />
     <file path="C:/projects/html_30036_banks/src/js/banks/Favourites.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1375347246635" ignored="false" />
     <file path="/Favourites.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1375347233018" ignored="false" />
@@ -100,7 +114,7 @@
     <file path="/parlay.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377977217754" ignored="false" />
     <file path="/mlb.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377590182328" ignored="false" />
     <file path="/parsers.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377589045333" ignored="false" />
-    <file path="/mlb.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382424545884" ignored="false" />
+    <file path="/mlb.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382445222206" ignored="false" />
     <file path="/data_helper.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377589292453" ignored="false" />
     <file path="/clp.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377589765984" ignored="false" />
     <file path="/BettorSpec.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382280369252" ignored="false" />
@@ -127,9 +141,16 @@
     <file path="/flat_ui_helper.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377974506917" ignored="false" />
     <file path="/simple.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382279212326" ignored="false" />
     <file path="/nhl.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382186544702" ignored="false" />
-    <file path="/nhl.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382426552082" ignored="false" />
-    <file path="/nba.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382426362494" ignored="false" />
+    <file path="/nhl.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382445654573" ignored="false" />
+    <file path="/nba.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382440689604" ignored="false" />
     <file path="/nba.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382192849335" ignored="false" />
+    <file path="/base.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382446437384" ignored="false" />
+    <file path="/towin.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382446394337" ignored="false" />
+    <file path="/fixed.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382446415789" ignored="false" />
+    <file path="/simpleABC.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382445461167" ignored="false" />
+    <file path="/simpleToWin4Tier.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382446508844" ignored="false" />
+    <file path="$PROJECT_DIR$/lib/RGraph/libraries/RGraph.hprogress.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382445218984" ignored="false" />
+    <file path="$PROJECT_DIR$/lib/RGraph/libraries/RGraph.line.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382445218984" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,6 +210,25 @@
     <breakpoint_rules />
     <ui_properties />
   </component>
+  <component name="DockManager">
+    <window id="2">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="fixed.js" pinned="false" current="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/js/betting/progressions/fixed.js">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state line="8" column="2" selection-start="243" selection-end="243" vertical-scroll-proportion="0.30588236">
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="backtester" />
@@ -198,16 +238,7 @@
       <file leaf-file-name="nfl.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nfl.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="789" selection-end="789" vertical-scroll-proportion="-13.419354">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nhl.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nhl.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="789" selection-end="789" vertical-scroll-proportion="-13.419354">
+            <state line="14" column="27" selection-start="706" selection-end="706" vertical-scroll-proportion="-11.741936">
               <folding />
             </state>
           </provider>
@@ -216,50 +247,61 @@
       <file leaf-file-name="nba.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nba.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="789" selection-end="789" vertical-scroll-proportion="-13.419354">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mlb.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="nhl.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nhl.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="41" selection-start="1060" selection-end="1060" vertical-scroll-proportion="-16.774193">
+              <folding>
+                <element signature="n#style#0;n#hr#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manager.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/betting/progressions/manager.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="6" selection-start="76" selection-end="76" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mlb.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mlb.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="37" selection-start="765" selection-end="765" vertical-scroll-proportion="-12.580646">
+            <state line="10" column="38" selection-start="542" selection-end="542" vertical-scroll-proportion="0.40061632">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="progressionManager.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/betting/progressionManager.js">
+      <file leaf-file-name="filters_manager.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/ui/filters_manager.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="46" selection-start="295" selection-end="295" vertical-scroll-proportion="0.0">
+            <state line="13" column="24" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stats.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/data/stats.js">
+      <file leaf-file-name="simpleToWin4Tier.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/systems/nhl/simpleToWin4Tier.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="39" selection-start="760" selection-end="760" vertical-scroll-proportion="0.5665138">
+            <state line="13" column="4" selection-start="334" selection-end="334" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="progressionToWin.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/betting/progressionToWin.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="2" selection-start="1277" selection-end="1277" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fixedProgression.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/betting/fixedProgression.js">
+      <file leaf-file-name="nhl.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/nhl.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
@@ -267,19 +309,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="parlay.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/betting/parlay.js">
+      <file leaf-file-name="bet.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/betting/bet.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="35" selection-start="1118" selection-end="1118" vertical-scroll-proportion="0.0">
+            <state line="36" column="29" selection-start="792" selection-end="792" vertical-scroll-proportion="-11.84">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="series.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/betting/series.js">
+      <file leaf-file-name="towin.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/betting/progressions/towin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="5" column="43" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -303,22 +345,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/tests/BettorSpec.js" />
-        <option value="$PROJECT_DIR$/js/betting/bet.js" />
-        <option value="$PROJECT_DIR$/js/ui/filters_manager.js" />
-        <option value="$PROJECT_DIR$/js/ui/helpers/flat_ui_helper.js" />
-        <option value="$PROJECT_DIR$/js/systems/core.js" />
-        <option value="$PROJECT_DIR$/css/styles.css" />
-        <option value="$PROJECT_DIR$/js/data/stats.js" />
-        <option value="$PROJECT_DIR$/js/aggregators.js" />
+        <option value="$PROJECT_DIR$/mlb.html" />
+        <option value="$PROJECT_DIR$/js/systems/nhl/simpleABC.js" />
+        <option value="$PROJECT_DIR$/js/systems/mlb/neither_to_7.js" />
+        <option value="$PROJECT_DIR$/js/systems/mlb/road_progressions.js" />
+        <option value="$PROJECT_DIR$/js/systems/mlb/simple_parlay_progression.js" />
+        <option value="$PROJECT_DIR$/js/systems/mlb/totals_mess.js" />
+        <option value="$PROJECT_DIR$/js/systems/nfl/pp.js" />
         <option value="$PROJECT_DIR$/nhl.html" />
+        <option value="$PROJECT_DIR$/js/betting/bet.js" />
+        <option value="$PROJECT_DIR$/js/betting/progressions/towin.js" />
+        <option value="$PROJECT_DIR$/js/betting/progressions/fixed.js" />
+        <option value="$PROJECT_DIR$/js/betting/progressions/base.js" />
+        <option value="$PROJECT_DIR$/js/systems/nhl/simpleToWin4Tier.js" />
+        <option value="$PROJECT_DIR$/js/ui/filters_manager.js" />
         <option value="$PROJECT_DIR$/nfl.html" />
         <option value="$PROJECT_DIR$/nba.html" />
-        <option value="$PROJECT_DIR$/mlb.html" />
-        <option value="$PROJECT_DIR$/js/betting/fixedProgression.js" />
-        <option value="$PROJECT_DIR$/js/betting/progressionToWin.js" />
-        <option value="$PROJECT_DIR$/js/betting/progressionManager.js" />
-        <option value="$PROJECT_DIR$/js/stats/stats.js" />
       </list>
     </option>
   </component>
@@ -425,7 +467,105 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backtester" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backtester" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="systems" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backtester" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backtester" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="systems" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nhl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backtester" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backtester" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backtester" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backtester" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="betting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backtester" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backtester" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="betting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="progressions" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -484,11 +624,11 @@
       <recent name="C:\Dropbox\bookies\pp_backtest\backtester\lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Dropbox\bookies\pp_backtest\backtester\js\betting\progressions" />
       <recent name="D:\dropbox\bookies\pp_backtest\backtester\js\systems" />
       <recent name="C:\Dropbox\bookies\pp_backtest\backtester\js\systems" />
       <recent name="C:\Dropbox\bookies\pp_backtest\backtester\js\systems\mlb" />
       <recent name="C:\Dropbox\bookies\pp_backtest\backtester" />
-      <recent name="C:\Dropbox\bookies\pp_backtest\backtester\css" />
     </key>
   </component>
   <component name="RunManager">
@@ -595,7 +735,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930845" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22502744" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22502744" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24968153" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -610,7 +750,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14565483" sideWeight="0.77497256" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14504284" sideWeight="0.77497256" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -683,114 +823,116 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/js/systems/mlb/simple_parlay_progression.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="25" selection-start="1545" selection-end="1545" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/systems/nfl/pp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="28" selection-start="579" selection-end="579" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/systems/mlb/totals_mess.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="54" selection-start="2978" selection-end="2978" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/systems/nhl/simpleABC.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="27" selection-start="498" selection-end="498" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/betting/bet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="29" selection-start="792" selection-end="792" vertical-scroll-proportion="-11.84">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/nhl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/betting/progressions/base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="74" selection-start="795" selection-end="795" vertical-scroll-proportion="0.83716077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/betting/progressions/towin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="43" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/systems/nhl/simpleToWin4Tier.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="4" selection-start="334" selection-end="334" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/betting/progressions/manager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="6" selection-start="76" selection-end="76" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/ui/filters_manager.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="147" column="49" selection-start="4225" selection-end="4225" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/systems/nfl/simple.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="40" selection-start="534" selection-end="534" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/aggregators.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="36" selection-start="1333" selection-end="1333" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/parsers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/util.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/systems/core.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="49" selection-start="520" selection-end="520" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/betting/series.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="13" column="24" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nfl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="789" selection-end="789" vertical-scroll-proportion="-13.419354">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nhl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="789" selection-end="789" vertical-scroll-proportion="-13.419354">
+        <state line="14" column="27" selection-start="706" selection-end="706" vertical-scroll-proportion="-11.741936">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nba.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="789" selection-end="789" vertical-scroll-proportion="-13.419354">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/betting/parlay.js">
+    <entry file="file://$PROJECT_DIR$/nhl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="35" selection-start="1118" selection-end="1118" vertical-scroll-proportion="0.0">
+        <state line="20" column="41" selection-start="1060" selection-end="1060" vertical-scroll-proportion="-16.774193">
+          <folding>
+            <element signature="n#style#0;n#hr#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/betting/progressions/fixed.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="2" selection-start="243" selection-end="243" vertical-scroll-proportion="0.30588236">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mlb.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="37" selection-start="765" selection-end="765" vertical-scroll-proportion="-12.580646">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/betting/progressionToWin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="2" selection-start="1277" selection-end="1277" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/betting/fixedProgression.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/betting/progressionManager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="46" selection-start="295" selection-end="295" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/data/stats.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="39" selection-start="760" selection-end="760" vertical-scroll-proportion="0.5665138">
+        <state line="10" column="38" selection-start="542" selection-end="542" vertical-scroll-proportion="0.40061632">
           <folding />
         </state>
       </provider>

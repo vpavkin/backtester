@@ -4,7 +4,7 @@ SYSTEMS.TOTALS_MESS = $.extend({}, MLB_SYSTEM_BASE, {
 	BET: BETING_TYPE.PARLAY,
 	MM: MM_TYPE.PROGRESSION,
 	updateStats: false,
-	filterAfter: false,
+	postFilter: false,
 	UNIT_SIZE: 25,
 	N: 3,
 	process: function (games, context) {
@@ -21,7 +21,7 @@ SYSTEMS.TOTALS_MESS = $.extend({}, MLB_SYSTEM_BASE, {
 		if (parlay.plays.length < this.N)
 			return res;
 		var prog = context.progressions.resolve(0);
-		P.win(parlay, prog.toWinSeries());
+		P.win(parlay, prog.toWinSeriesAmount());
 		parlay.prg = 0;
 		prog.process(parlay);
 		res.push(parlay);
