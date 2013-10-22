@@ -2,96 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/mlb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/sports/mlb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/systems/mlb/mlb_system_base.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/systems/mlb/simple_parlay_progression.js" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\data\data.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\js\data\data_helper.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\js\systems\simple_parlay_progression.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\css\ModalDialog.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\css\animations.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\css\website.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\excanvas\EXCANVAS-LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\excanvas\HTACCESS-SAMPLE" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\excanvas\excanvas.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\images\bg.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\images\bullet.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\images\creative-commons-logo-large.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\images\title.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\.BC.txt" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\.CHANGELOG.txt" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.bar.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.bipolar.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.common.annotate.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.common.context.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.common.core.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.common.dynamic.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.common.effects.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.common.key.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.common.resizing.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.common.tooltips.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.common.zoom.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.cornergauge.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.drawing.circle.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.drawing.image.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.drawing.marker1.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.drawing.marker2.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.drawing.poly.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.drawing.rect.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.drawing.text.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.drawing.xaxis.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.drawing.yaxis.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.fuel.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.funnel.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.gantt.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.gauge.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.hbar.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.hprogress.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.led.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.line.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.meter.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.modaldialog.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.odo.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.pie.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.radar.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.rose.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.rscatter.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.scatter.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.thermometer.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.vprogress.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\libraries\RGraph.waterfall.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\lib\RGraph\license.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/BettorSpec.js" afterPath="$PROJECT_DIR$/tests/BettorSpec.js" />
+      <change type="DELETED" beforePath="C:\Dropbox\bookies\pp_backtest\backtester\js\systems\mlb\mlb_system_base.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/aggregators.js" afterPath="$PROJECT_DIR$/js/aggregators.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/betting/bet.js" afterPath="$PROJECT_DIR$/js/betting/bet.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/systems/core.js" afterPath="$PROJECT_DIR$/js/systems/core.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/ui/helpers/core.js" afterPath="$PROJECT_DIR$/js/ui/helpers/core.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/ui/filters_manager.js" afterPath="$PROJECT_DIR$/js/ui/filters_manager.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/ui/helpers/flat_ui_helper.js" afterPath="$PROJECT_DIR$/js/ui/helpers/flat_ui_helper.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/betting/parlay.js" afterPath="$PROJECT_DIR$/js/betting/parlay.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/parsers.js" afterPath="$PROJECT_DIR$/js/parsers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mlb.html" afterPath="$PROJECT_DIR$/mlb.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nba.html" afterPath="$PROJECT_DIR$/nba.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nfl.html" afterPath="$PROJECT_DIR$/nfl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nhl.html" afterPath="$PROJECT_DIR$/nhl.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/betting/progressionManager.js" afterPath="$PROJECT_DIR$/js/betting/progressionManager.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/data/stats.js" afterPath="$PROJECT_DIR$/js/data/stats.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/css/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests.html" afterPath="$PROJECT_DIR$/tests.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/ui/ui.js" afterPath="$PROJECT_DIR$/js/ui/ui.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/util.js" afterPath="$PROJECT_DIR$/js/util.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\js\systems\clp.js" afterPath="$PROJECT_DIR$/js/systems/mlb/clp.js" />
-      <change type="MOVED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\js\systems\pp.js" afterPath="$PROJECT_DIR$/js/systems/mlb/pp.js" />
-      <change type="MOVED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\js\systems\simple.js" afterPath="$PROJECT_DIR$/js/systems/mlb/simple.js" />
-      <change type="MOVED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\js\systems\simple_parlay.js" afterPath="$PROJECT_DIR$/js/systems/mlb/simple_parlay.js" />
-      <change type="MOVED" beforePath="D:\dropbox\bookies\pp_backtest\backtester\main.html" afterPath="$PROJECT_DIR$/mlb.html" />
     </list>
     <ignored path="backtester.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/main.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1375734671531" ignored="false" />
     <file path="/testers.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373829931866" ignored="false" />
     <file path="/better.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373650049167" ignored="false" />
-    <file path="/a.dummy" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377976959965" ignored="false" />
-    <file path="/styles.css" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382279487249" ignored="false" />
+    <file path="/a.dummy" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382427138734" ignored="false" />
+    <file path="/styles.css" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382426446443" ignored="false" />
     <file path="/backtester.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373827585246" ignored="false" />
     <file path="C:/projects/store_apps/src/sheriff/client/logs/main.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373470977345" ignored="false" />
     <file path="C:/projects/store_apps/src/sheriff/client/logs/logs.css" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373470977345" ignored="false" />
@@ -129,7 +58,7 @@
     <file path="C:/projects/store_apps/src/resources/scss/ui/phone.scss" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373470977345" ignored="false" />
     <file path="/tests.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382280006166" ignored="false" />
     <file path="/BetterSpec.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373479602797" ignored="false" />
-    <file path="/Dummy.txt" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382186119487" ignored="false" />
+    <file path="/Dummy.txt" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382420904890" ignored="false" />
     <file path="C:/projects/store_apps/tools/build/build.gradle" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373634604158" ignored="false" />
     <file path="/build.gradle" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373634367969" ignored="false" />
     <file path="/filters_ui.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373643972716" ignored="false" />
@@ -138,15 +67,15 @@
     <file path="/config.json" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373634828738" ignored="false" />
     <file path="C:/projects/store_apps/tools/build/css.cmd" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1373631022750" ignored="false" />
     <file path="/pp.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377976918631" ignored="false" />
-    <file path="/stats.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377598824862" ignored="false" />
+    <file path="/stats.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382427532937" ignored="false" />
     <file path="/aggregators.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382278392203" ignored="false" />
     <file path="/util.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377965936389" ignored="false" />
     <file path="/simple_series.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377590197014" ignored="false" />
-    <file path="/core.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382279340020" ignored="false" />
+    <file path="/core.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382425204456" ignored="false" />
     <file path="/series.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1375732398615" ignored="false" />
     <file path="/filters_manager.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382282461926" ignored="false" />
     <file path="/totals_mess.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377602398542" ignored="false" />
-    <file path="/progressionManager.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374831404315" ignored="false" />
+    <file path="/progressionManager.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382428090679" ignored="false" />
     <file path="C:/projects/store_apps/src/sheriff/client/manifest.json" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1375090153676" ignored="false" />
     <file path="C:/projects/store_apps/src/sheriff/client/assistant/assistant.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1375099125680" ignored="false" />
     <file path="C:/projects/store_apps/src/sheriff/client/common/ui.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1374839507567" ignored="false" />
@@ -167,11 +96,11 @@
     <file path="/jrpc.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1375359715877" ignored="false" />
     <file path="C:/projects/store_apps/src/resources/protected/jsonrpc.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1375359721330" ignored="false" />
     <file path="/road_progressions.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1375736594698" ignored="false" />
-    <file path="/nfl.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382282816016" ignored="false" />
+    <file path="/nfl.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382422994553" ignored="false" />
     <file path="/parlay.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377977217754" ignored="false" />
     <file path="/mlb.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377590182328" ignored="false" />
     <file path="/parsers.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377589045333" ignored="false" />
-    <file path="/mlb.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382282786426" ignored="false" />
+    <file path="/mlb.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382424545884" ignored="false" />
     <file path="/data_helper.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377589292453" ignored="false" />
     <file path="/clp.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377589765984" ignored="false" />
     <file path="/BettorSpec.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382280369252" ignored="false" />
@@ -198,8 +127,8 @@
     <file path="/flat_ui_helper.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1377974506917" ignored="false" />
     <file path="/simple.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382279212326" ignored="false" />
     <file path="/nhl.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382186544702" ignored="false" />
-    <file path="/nhl.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382282810761" ignored="false" />
-    <file path="/nba.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382282803292" ignored="false" />
+    <file path="/nhl.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382426552082" ignored="false" />
+    <file path="/nba.html" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382426362494" ignored="false" />
     <file path="/nba.js" changelist="d7cc8d33-0f6f-4dae-a063-dfe4bc5a0ffe" time="1382192849335" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -266,13 +195,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="nfl.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="nfl.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nfl.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="21" selection-start="700" selection-end="700" vertical-scroll-proportion="0.56086284">
-              <folding>
-                <element signature="n#style#0;n#hr#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="16" column="0" selection-start="789" selection-end="789" vertical-scroll-proportion="-13.419354">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -280,72 +207,7 @@
       <file leaf-file-name="nhl.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nhl.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="33" selection-start="47" selection-end="47" vertical-scroll-proportion="-1.6774193">
-              <folding>
-                <element signature="n#style#0;n#hr#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="filters_manager.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/ui/filters_manager.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="143" column="19" selection-start="4140" selection-end="4140" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ui.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/ui/ui.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="flat_ui_helper.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/ui/helpers/flat_ui_helper.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="188" column="9" selection-start="5962" selection-end="5962" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mlb.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mlb.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="4" selection-start="18" selection-end="56" vertical-scroll-proportion="-1.6774193">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/jQuery/jquery.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="33" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nhl.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/sports/nhl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nba.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/sports/nba.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="24" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0">
+            <state line="16" column="0" selection-start="789" selection-end="789" vertical-scroll-proportion="-13.419354">
               <folding />
             </state>
           </provider>
@@ -354,11 +216,71 @@
       <file leaf-file-name="nba.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nba.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="33" selection-start="47" selection-end="47" vertical-scroll-proportion="-1.6774193">
-              <folding>
-                <element signature="n#style#0;n#hr#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#select#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="16" column="0" selection-start="789" selection-end="789" vertical-scroll-proportion="-13.419354">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mlb.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mlb.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="37" selection-start="765" selection-end="765" vertical-scroll-proportion="-12.580646">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="progressionManager.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/betting/progressionManager.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="46" selection-start="295" selection-end="295" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stats.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/data/stats.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="39" selection-start="760" selection-end="760" vertical-scroll-proportion="0.5665138">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="progressionToWin.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/betting/progressionToWin.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="53" column="2" selection-start="1277" selection-end="1277" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fixedProgression.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/betting/fixedProgression.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="parlay.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/betting/parlay.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="35" selection-start="1118" selection-end="1118" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="series.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/betting/series.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -381,29 +303,29 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/js/ui/ui.js" />
-        <option value="$PROJECT_DIR$/js/aggregators.js" />
-        <option value="$PROJECT_DIR$/data/nba.js" />
-        <option value="$PROJECT_DIR$/js/sports/nba.js" />
-        <option value="$PROJECT_DIR$/js/systems/core.js" />
-        <option value="$PROJECT_DIR$/css/styles.css" />
-        <option value="$PROJECT_DIR$/js/systems/nba/simple.js" />
-        <option value="$PROJECT_DIR$/tests.html" />
         <option value="$PROJECT_DIR$/tests/BettorSpec.js" />
         <option value="$PROJECT_DIR$/js/betting/bet.js" />
         <option value="$PROJECT_DIR$/js/ui/filters_manager.js" />
         <option value="$PROJECT_DIR$/js/ui/helpers/flat_ui_helper.js" />
-        <option value="$PROJECT_DIR$/mlb.html" />
-        <option value="$PROJECT_DIR$/nba.html" />
+        <option value="$PROJECT_DIR$/js/systems/core.js" />
+        <option value="$PROJECT_DIR$/css/styles.css" />
+        <option value="$PROJECT_DIR$/js/data/stats.js" />
+        <option value="$PROJECT_DIR$/js/aggregators.js" />
         <option value="$PROJECT_DIR$/nhl.html" />
         <option value="$PROJECT_DIR$/nfl.html" />
+        <option value="$PROJECT_DIR$/nba.html" />
+        <option value="$PROJECT_DIR$/mlb.html" />
+        <option value="$PROJECT_DIR$/js/betting/fixedProgression.js" />
+        <option value="$PROJECT_DIR$/js/betting/progressionToWin.js" />
+        <option value="$PROJECT_DIR$/js/betting/progressionManager.js" />
+        <option value="$PROJECT_DIR$/js/stats/stats.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="54" />
+    <option name="x" value="1672" />
     <option name="y" value="-8" />
-    <option name="width" value="1634" />
+    <option name="width" value="1696" />
     <option name="height" value="1066" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -456,6 +378,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -502,29 +425,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backtester" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backtester" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helpers" />
+              <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -559,7 +460,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -568,12 +468,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
-    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -628,13 +528,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
-      <JSDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSDebuggerConfigurationSettings>
-      <method />
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" runner="idea" />
       <module name="" />
@@ -654,6 +547,13 @@
       </option>
       <envs />
       <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
       <method />
     </configuration>
     <list size="0" />
@@ -689,13 +589,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1634" height="1066" extended-state="6" />
+    <frame x="1672" y="-8" width="1696" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930845" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22502744" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22502744" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24968153" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -710,7 +610,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1513995" sideWeight="0.77497256" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14565483" sideWeight="0.77497256" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -783,122 +683,115 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tests.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="30" selection-start="485" selection-end="485" vertical-scroll-proportion="-12.580646">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/sports/mlb.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/mlb.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="62" selection-start="5998" selection-end="5998" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/BettorSpec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="20" selection-start="1945" selection-end="1945" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/betting/bet.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="41" selection-start="1980" selection-end="1980" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/sports/nfl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/sports/nhl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/sports/nba.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="24" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/jQuery/jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="33" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/ui/filters_manager.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="143" column="19" selection-start="4140" selection-end="4140" vertical-scroll-proportion="0.0">
+        <state line="147" column="49" selection-start="4225" selection-end="4225" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/ui/ui.js">
+    <entry file="file://$PROJECT_DIR$/js/systems/nfl/simple.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="40" selection-start="534" selection-end="534" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/aggregators.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="36" selection-start="1333" selection-end="1333" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/parsers.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/ui/helpers/flat_ui_helper.js">
+    <entry file="file://$PROJECT_DIR$/js/util.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="188" column="9" selection-start="5962" selection-end="5962" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mlb.html">
+    <entry file="file://$PROJECT_DIR$/js/systems/core.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="4" selection-start="18" selection-end="56" vertical-scroll-proportion="-1.6774193">
+        <state line="40" column="49" selection-start="520" selection-end="520" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/betting/series.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nfl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="789" selection-end="789" vertical-scroll-proportion="-13.419354">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nhl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="789" selection-end="789" vertical-scroll-proportion="-13.419354">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nba.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="33" selection-start="47" selection-end="47" vertical-scroll-proportion="-1.6774193">
-          <folding>
-            <element signature="n#style#0;n#hr#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#select#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="16" column="0" selection-start="789" selection-end="789" vertical-scroll-proportion="-13.419354">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nhl.html">
+    <entry file="file://$PROJECT_DIR$/js/betting/parlay.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="33" selection-start="47" selection-end="47" vertical-scroll-proportion="-1.6774193">
-          <folding>
-            <element signature="n#style#0;n#hr#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="39" column="35" selection-start="1118" selection-end="1118" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nfl.html">
+    <entry file="file://$PROJECT_DIR$/mlb.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="21" selection-start="700" selection-end="700" vertical-scroll-proportion="0.56086284">
-          <folding>
-            <element signature="n#style#0;n#hr#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="15" column="37" selection-start="765" selection-end="765" vertical-scroll-proportion="-12.580646">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/betting/progressionToWin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="2" selection-start="1277" selection-end="1277" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/betting/fixedProgression.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/betting/progressionManager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="46" selection-start="295" selection-end="295" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/data/stats.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="39" selection-start="760" selection-end="760" vertical-scroll-proportion="0.5665138">
+          <folding />
         </state>
       </provider>
     </entry>

@@ -1,4 +1,4 @@
-div, p, table, select {
+div, p, table, select, input {
 	font-family: Georgia, Tahoma, sans-serif;
 }
 
@@ -54,10 +54,11 @@ div, p, table, select {
 
 /*filters*/
 .filters {
+	position: relative;
 	margin-top: 10px;
 	padding-bottom: 10px;
 	padding-left: 10px;
-	background: #e6e5e1;
+	background: rgba(0, 0, 0, .1);
 	border-radius: 7px;
 	overflow: hidden;
 }
@@ -67,9 +68,35 @@ div, p, table, select {
 	width: 135px;
 }
 
-/*.filters > div.buttons {*/
-/*width: 850px;*/
-/*}*/
+.filters #bg {
+	float: none;
+	width: auto;
+	position: fixed;
+	font-size: 180px;
+	opacity: 0.25;
+	top: 235px;
+	z-index: -1;
+	overflow: hidden;
+}
+.filters #bg span{
+	font-size: 70px;
+}
+
+#nfl-filters #bg {
+	color: orange;
+}
+
+#nba-filters #bg {
+	color: red;
+}
+
+#nhl-filters #bg {
+	color: blue;
+}
+
+#mlb-filters #bg {
+	color: green;
+}
 
 input[type="checkbox"] {
 	display: inline-block;
@@ -80,6 +107,13 @@ input[type="range"] {
 	display: inline-block;
 	width: 125px;
 	margin-left: 5px;
+}
+
+input[type="number"] {
+	display: inline-block;
+	width: 100px;
+	margin: 5px 5px;
+	font-size: 16px;
 }
 
 label {

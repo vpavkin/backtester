@@ -24,64 +24,35 @@ var BETING_TYPE = {
 	PARLAY: 1
 };
 
-var MLB_SYSTEM_BASE = {
+var SYSTEM_BASE = {
 	DESCRIPTION: "",
 	NAME: "",
-	AGGREGATOR: AGGREGATOR_TYPE.MLB.BY_DAY,
 	MM: MM_TYPE.FLAT,
 	BET: BETING_TYPE.SINGLE,
-	updateStats: false,
 	filterAfter: true,
 	UNIT_SIZE: 100,
-	init: function () {
+	init: function() {
 	},
-	process: function (games) {
-	}
+	process: function(games) {
+	},
+	updateStats: null
 };
 
-var NFL_SYSTEM_BASE = {
-	DESCRIPTION: "",
-	NAME: "",
-	AGGREGATOR: AGGREGATOR_TYPE.NFL.BY_DAY,
-	MM: MM_TYPE.FLAT,
-	BET: BETING_TYPE.SINGLE,
-	updateStats: false,
-	filterAfter: true,
-	UNIT_SIZE: 100,
-	init: function () {
-	},
-	process: function (games) {
-	}
-};
+var MLB_SYSTEM_BASE = $.extend({}, SYSTEM_BASE, {
+	AGGREGATOR: AGGREGATOR_TYPE.MLB.BY_DAY
+});
 
-var NHL_SYSTEM_BASE = {
-	DESCRIPTION: "",
-	NAME: "",
-	AGGREGATOR: AGGREGATOR_TYPE.NHL.BY_DAY,
-	MM: MM_TYPE.FLAT,
-	BET: BETING_TYPE.SINGLE,
-	updateStats: false,
-	filterAfter: true,
-	UNIT_SIZE: 100,
-	init: function () {
-	},
-	process: function (games) {
-	}
-};
+var NFL_SYSTEM_BASE = $.extend({}, SYSTEM_BASE, {
+	AGGREGATOR: AGGREGATOR_TYPE.NFL.BY_DAY
+});
 
-var NBA_SYSTEM_BASE = {
-	DESCRIPTION: "",
-	NAME: "",
-	AGGREGATOR: AGGREGATOR_TYPE.NBA.BY_DAY,
-	MM: MM_TYPE.FLAT,
-	BET: BETING_TYPE.SINGLE,
-	updateStats: false,
-	filterAfter: true,
-	UNIT_SIZE: 100,
-	init: function () {
-	},
-	process: function (games) {
-	}
-};
+var NHL_SYSTEM_BASE = $.extend({}, SYSTEM_BASE, {
+	AGGREGATOR: AGGREGATOR_TYPE.NHL.BY_DAY
+});
 
+var NBA_SYSTEM_BASE = $.extend({}, SYSTEM_BASE, {
+	AGGREGATOR: AGGREGATOR_TYPE.NBA.BY_DAY
+});
+
+//collection of systems for launched sport
 var SYSTEMS = {};

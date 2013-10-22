@@ -14,7 +14,6 @@
     <script src="js/betting/bet.js"></script>
     <script src="js/betting/parlay.js"></script>
     <script src="js/betting/progressionManager.js"></script>
-    <script src="js/betting/series.js"></script>
     <script src="js/aggregators.js"></script>
     <script src="js/parsers.js"></script>
     <script src="js/systems/core.js"></script>
@@ -40,7 +39,8 @@
     </script>
 </head>
 <body>
-<div class="filters">
+<div id="nhl-filters" class="filters">
+    <div id="bg">NHL <span>(no &plusmn;1.5 odds)</span></div>
     <div id="by_season">
         <label class="filter_header">By season:</label>
         <input id="season_2006" type="checkbox" checked value="2006-2007"/>
@@ -125,12 +125,12 @@
     </div>
     <div id="by_odds">
         <label class="filter_header">Taken odds:</label>
-        <input id="odds_min" type="checkbox" value="odds_min"/>
-        <label for="odds_min"><span></span>Min = 1</label>
-        <input id="odds_min_val" type="range" value="1" min="1.0" max="3.0" step="0.01"/>
-        <input id="odds_max" type="checkbox" value="odds_max"/>
-        <label for="odds_max"><span></span>Max = 2.5</label>
-        <input id="odds_max_val" type="range" value="2.5" min="1.0" max="3.0" step="0.01"/>
+          <input id="odds_min" type="checkbox" value="odds_min"/>
+          <label for="odds_min"><span></span>Min = 1</label>
+          <input id="odds_min_val" type="number" value="1" min="1.0" max="3.0" step="0.01"/>
+          <input id="odds_max" type="checkbox" value="odds_max"/>
+          <label for="odds_max"><span></span>Max = 2.5</label>
+          <input id="odds_max_val" type="number" value="2.5" min="1.0" max="3.0" step="0.01"/>
     </div>
     <div class="buttons">
 

@@ -55,8 +55,6 @@ var AGGREGATORS = {
 				var res = system.process(days[D], context);
 				output.push(system.filterAfter ? FILTERS_MANAGER.afterFilterGames(res) : res);
 			}
-			if (system.updateStats)
-				STATS.updateStats(AGGREGATORS.gamesForDay(D), context)
 		});
 
 		return parser(output);
