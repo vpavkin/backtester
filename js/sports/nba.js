@@ -1,5 +1,5 @@
 var NBA = {
-
+	NAME: "NBA",
 	SEASONS: ["2006-2007", "2007-2008", "2008-2009", "2009-2010", "2010-2011", "2011-2012", "2012-2013", "2013-2014"],
 	TEAMS: [
 		"Atlanta Hawks",
@@ -35,5 +35,16 @@ var NBA = {
 	],
 	STATS: {
 
+	},
+	hideColumns: {
+		"H_ML": true,
+		"R_ML": true,
+		"H_S_L": true,
+		"R_S_L": true,
+		"O_L": true,
+		"U_L": true
+	},
+	hasColumn: function(c) {
+		return !this.hideColumns[c];
 	}
 };

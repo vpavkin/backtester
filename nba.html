@@ -15,12 +15,15 @@
     <script src="js/betting/parlay.js"></script>
     <script src="js/betting/progressions/base.js"></script>
     <script src="js/betting/progressions/manager.js"></script>
+    <script src="js/betting/progressions/oneWinBase.js"></script>
     <script src="js/betting/progressions/fixed.js"></script>
     <script src="js/betting/progressions/towin.js"></script>
+    <script src="js/betting/progressions/XCodeProgression.js"></script>
     <script src="js/aggregators.js"></script>
     <script src="js/parsers.js"></script>
     <script src="js/systems/core.js"></script>
     <script src="js/systems/nba/simple.js"></script>
+    <script src="js/systems/nba/XCode.js"></script>
     <script src="js/ui/helpers/core.js"></script>
     <script src="js/ui/helpers/flat_ui_helper.js"></script>
     <script src="js/ui/helpers/parlay_ui_helper.js"></script>
@@ -143,8 +146,6 @@
 <div class="description">
 </div>
 <div id="tables">
-    <table id="games">
-    </table>
     <div>
         <table id="stats">
         </table>
@@ -156,9 +157,12 @@
         </table>
         <table id="stats-odds">
         </table>
-        <table id="stats-bets">
-        </table>
     </div>
+    <table id="games">
+    </table>
+</div>
+<div id="lightbox">
+    <div id="preloader"></div>
 </div>
 </body>
 </html>

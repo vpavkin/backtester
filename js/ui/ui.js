@@ -1,5 +1,5 @@
 var APP_UI = {
-	_parser: function (s) {
+	_parser: function(s) {
 		switch (s.MM) {
 			case MM_TYPE.FLAT:
 				return PARSERS.flat;
@@ -8,7 +8,7 @@ var APP_UI = {
 		}
 		return PARSERS.flat;
 	},
-	_helper: function (s) {
+	_helper: function(s) {
 		switch (s.BET) {
 			case BETING_TYPE.SINGLE:
 				return FLAT_UI;
@@ -17,7 +17,7 @@ var APP_UI = {
 		}
 		return FLAT_UI;
 	},
-	_aggregator: function (s) {
+	_aggregator: function(s) {
 		switch (s.AGGREGATOR) {
 			case AGGREGATOR_TYPE.MLB.BY_DAY:
 				return AGGREGATORS.MLB.daily;
@@ -36,21 +36,28 @@ var APP_UI = {
 		}
 		return null;
 	},
-	addSystems: function () {
+	addSystems: function() {
 		var container = $(".buttons");
 
 		for (var sysname in SYSTEMS) {
 			var l = $('<a href="#"></a>');
-			l.html(SYSTEMS[sysname].NAME).data("system", sysname);
+			l.html(SYSTEMS[sysname].NAME).data("system", sysname).attr("title", SYSTEMS[sysname].DESCRIPTION);
+			if (SYSTEMS[sysname].isResearch)
+				l.addClass("research");
 			container.append(l);
-			l.click(function (e) {
-				var s = SYSTEMS[$(e.target).data('system')];
-				APP_UI.TEST(APP_UI._aggregator(s), s, APP_UI._parser(s), APP_UI._helper(s));
-				e.preventDefault();
+			l.click(function(e) {
+				var lightbox = $("#lightbox");
+				lightbox.show();
+				setTimeout(function() {
+					var s = SYSTEMS[$(e.target).data('system')];
+					APP_UI.TEST(APP_UI._aggregator(s), s, APP_UI._parser(s), APP_UI._helper(s));
+					lightbox.hide();
+					e.preventDefault();
+				}, 100);
 			});
 		}
 	},
-	TEST: function (aggregator, system, parser, UI) {
+	TEST: function(aggregator, system, parser, UI) {
 
 		window.UNIT_SIZE = system.UNIT_SIZE;
 		var res = aggregator(system, parser);

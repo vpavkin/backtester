@@ -52,6 +52,37 @@ div, p, table, select, input {
 	top: 1px;
 }
 
+.buttons a.research {
+	float: left;
+	display: inline-block;
+	margin: 5px;
+	-moz-box-shadow: inset 0px 1px 0px 0px #caefab;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #caefab;
+	box-shadow: inset 0px 1px 0px 0px #caefab;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #77d42a), color-stop(1, #5cb811));
+	background: -moz-linear-gradient(center top, #77d42a 5%, #5cb811 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#77d42a', endColorstr='#5cb811');
+	background-color: #77d42a;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border: 1px solid #268a16;
+	border-radius: 6px;
+	display: inline-block;
+	color: #306108;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 6px 10px;
+	text-decoration: none;
+	text-shadow: 1px 1px 0px #aade7c;
+}
+
+.buttons a.research:hover {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #5cb811), color-stop(1, #77d42a));
+	background: -moz-linear-gradient(center top, #5cb811 5%, #77d42a 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5cb811', endColorstr='#77d42a');
+	background-color: #5cb811;
+}
+
 /*filters*/
 .filters {
 	position: relative;
@@ -78,7 +109,8 @@ div, p, table, select, input {
 	z-index: -1;
 	overflow: hidden;
 }
-.filters #bg span{
+
+.filters #bg span {
 	font-size: 70px;
 }
 
@@ -132,13 +164,14 @@ label {
 
 /*tables*/
 #games, #tables > div {
-	display: inline;
-	float: left;
 	margin-right: 20px;
 }
 
 #tables > div > table {
+	display: inline;
+	float: left;
 	margin-bottom: 5px;
+	margin-left: 5px;
 }
 
 #tables {
@@ -266,4 +299,93 @@ input[type="checkbox"] + label span {
 
 input[type="checkbox"]:checked + label span {
 	background: url(../img/check_radio_sheet.png) -19px top no-repeat;
+}
+
+/*preloader*/
+
+#lightbox {
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .5);
+	display: none;
+}
+
+#preloader {
+	width: 100px;
+	height: 100px;
+	background: rgba(0, 0, 0, .5);
+	border-radius: 54px;
+	border: 4px solid #000000;
+	position: absolute;
+	margin-left: -20px;
+	margin-top: -40px;
+	left: 50%;
+	top: 50%;
+}
+
+#preloader:after {
+	content: "";
+	position: absolute;
+	top: -4px;
+	left: -4px;
+	border: 4px solid #ffffff;
+	border-radius: 54px;
+	height: 100px;
+	width: 100px;
+	clip: rect(0px, 60px, 50px, 0px);
+
+	-moz-animation: rotate 2s;
+	-moz-animation-timing-function: linear;
+	-moz-animation-iteration-count: infinite;
+
+	-webkit-animation: rotate 2s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+
+	-ms-animation: rotate 2s;
+	-ms-animation-timing-function: linear;
+	-ms-animation-iteration-count: infinite;
+
+	animation: rotate 2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@-moz-keyframes rotate {
+	0% {
+		-moz-transform: rotate(0deg);
+	}
+	100% {
+		-moz-transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes rotate {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@-ms-keyframes rotate {
+	0% {
+		-ms-transform: rotate(0deg);
+	}
+	100% {
+		-ms-transform: rotate(360deg);
+	}
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }
