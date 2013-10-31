@@ -6,25 +6,25 @@ var FLAT_UI = $.extend({}, UI_BASE, {
 		games.forEach(function(g) {
 			r += "<tr>" +
 				me._progressionCells1(games, g) +
-				me.td(g.D) +
-				me.td(g.H) +
-				me.td(g.R) +
-				me.td(g["H_ML"]) +
-				me.td(g["R_ML"]) +
-				me.td(g["H_S_L"]) +
-				me.td(g["R_S_L"]) +
-				me.td(g["O/U_L"]) +
-				me.td(g["O_L"]) +
-				me.td(g["U_L"]) +
-				me.td(g["H_R"]) +
-				me.td(g["R_R"]) +
-				me.td(g["T"]) +
+				me.td(g.D, "D") +
+				me.td(g.H, "H") +
+				me.td(g.R, "R") +
+				me.td(g["H_ML"], "H_ML") +
+				me.td(g["R_ML"], "R_ML") +
+				me.td(g["H_S_L"], "H_S_L") +
+				me.td(g["R_S_L"], "R_S_L") +
+				me.td(g["O/U_L"], "O/U_L") +
+				me.td(g["O_L"], "O_L") +
+				me.td(g["U_L"], "U_L") +
+				me.td(g["H_R"], "H_R") +
+				me.td(g["R_R"], "R_R") +
+				me.td(g["T"], "T") +
 				me.td(g["betString"]) +
 				me.td(g["stake"].toFixed(2)) +
 				me.td(g["takenOdds"].toFixed(2)) +
-				me.td(g["result"].toFixed(2), UTILS.getCSSClass(g.result)) +
+				me.td(g["result"].toFixed(2), null, UTILS.getCSSClass(g.result)) +
 				me._progressionCells2(games, g) +
-				me.td(g["accumulatedResult"].toFixed(2), UTILS.getCSSClass(g["accumulatedResult"])) +
+				me.td(g["accumulatedResult"].toFixed(2), null, UTILS.getCSSClass(g["accumulatedResult"])) +
 				"</tr>";
 		});
 		return r;
@@ -32,25 +32,25 @@ var FLAT_UI = $.extend({}, UI_BASE, {
 	makeGamesTableHeader: function(games) {
 		return "<tr>" +
 			this._progressionHeaders1(games) +
-			"<th title='Date'>Date</th>" +
-			"<th title='Home'>Home</th>" +
-			"<th title='Road'>Road</th>" +
-			"<th title='Home ML Odds'>H ML</th>" +
-			"<th title='Road ML Odds'>R ML</th>" +
-			"<th title='Home Spread odds'>H SL</th>" +
-			"<th title='Road Spread odds'>R SL</th>" +
-			"<th title='O/U line'>O/U</th>" +
-			"<th title='Over odds'>O odds</th>" +
-			"<th title='Under Odds'>U odds</th>" +
-			"<th title='Pts scored Home'>H Pts</th>" +
-			"<th title='Pts scored Road'>R Pts</th>" +
-			"<th title='Total runs'>Total</th>" +
-			"<th title='Taken bet'>Taken</th>" +
-			"<th title='Bet amount in $'>Stake</th>" +
-			"<th title='Odds'>Odds</th>" +
-			"<th title='Bet result in $'>Result</th>" +
+			this.th('Date', 'Date', "D") +
+			this.th('Home', 'Home', "H") +
+			this.th('Road', 'Road', "R") +
+			this.th('Home ML Odds', 'H ML', "H_ML") +
+			this.th('Road ML Odds', 'R ML', "R_ML") +
+			this.th('Home Spread odds', 'H SL', "H_S_L") +
+			this.th('Road Spread odds', 'R SL', "R_S_L") +
+			this.th('O/U line', 'O/U', "O/U_L") +
+			this.th('Over odds', 'O odds', "O_L") +
+			this.th('Under Odds', 'U odds', "U_L") +
+			this.th('Pts scored Home', 'H Pts', "H_R") +
+			this.th('Pts scored Road', 'R Pts', "R_R") +
+			this.th('Total points', 'Total', "T") +
+			this.th('Taken bet', 'Taken') +
+			this.th('Bet amount in $', 'Stake') +
+			this.th('Odds', 'Odds') +
+			this.th('Bet result in $', 'Result') +
 			this._progressionHeaders2(games) +
-			"<th title='Accumulated result with current bet'>Accumulated result</th>" +
+			this.th('Accumulated result with current bet', 'Accumulated result') +
 			"</tr>"
 	},
 	makeDayStatsTable: function(results) {

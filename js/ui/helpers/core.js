@@ -1,8 +1,15 @@
 var UI_BASE = {
 	hiddenColumns: {},
 	header: null,
-	td: function(str, cl) {
-		return "<td" + (cl ? " class='" + cl + "'" : "") + ">" + str + "</td>";
+	td: function(str, column, cl) {
+		if (!column || LEAGUE.hasColumn(column))
+			return "<td" + (cl ? " class='" + cl + "'" : "") + ">" + str + "</td>";
+		return ""
+	},
+	th: function(title, text, column) {
+		if (!column || LEAGUE.hasColumn(column))
+			return "<th title='" + title + "'>" + text + "</th>";
+		return ""
 	},
 	dayName: function(n) {
 		switch (n) {
@@ -95,7 +102,7 @@ var UI_BASE = {
 	},
 	_progressionCells2: function(games, g) {
 		if (games.isProgression)
-			return this.td(g.seriesResult.toFixed(2), UTILS.getCSSClass(g.seriesResult)) +
+			return this.td(g.seriesResult.toFixed(2), null, UTILS.getCSSClass(g.seriesResult)) +
 				this.td(g.tier);
 		return "";
 	}

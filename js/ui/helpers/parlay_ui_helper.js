@@ -10,9 +10,9 @@ var PARLAY_UI = $.extend({}, UI_BASE, {
 				me.td(g["takenBetHTML"]) +
 				me.td(g["stake"].toFixed(2)) +
 				me.td(g["takenOdds"].toFixed(2)) +
-				me.td(g["result"].toFixed(2), (g["result"] >= 0 ? "green" : "red")) +
+				me.td(g["result"].toFixed(2), null, (g["result"] >= 0 ? "green" : "red")) +
 				me._progressionCells2(games, g) +
-				me.td(g["accumulatedResult"].toFixed(2), (g["accumulatedResult"] > 0 ? "green" : "red")) +
+				me.td(g["accumulatedResult"].toFixed(2), null, (g["accumulatedResult"] > 0 ? "green" : "red")) +
 				"</tr>";
 		});
 		return r;
