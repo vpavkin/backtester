@@ -311,6 +311,72 @@ input[type="checkbox"]:checked + label span {
 	background: url(../img/check_radio_sheet.png) -19px top no-repeat;
 }
 
+/*main page*/
+
+#main_version {
+	width: 90%;
+	margin: 0 auto;
+	font-size: 120px;
+	text-align: center;
+	-moz-box-shadow: inset 0px 1px 0px 0px #2e2d2e;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #2e2d2e;
+	box-shadow: inset 0px 1px 0px 0px #2e2d2e;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #4d4c4d), color-stop(1, #292929));
+	background: -moz-linear-gradient(center top, #4d4c4d 5%, #292929 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4d4c4d', endColorstr='#292929');
+	background-color: #4d4c4d;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	border: 1px solid #242324;
+	color: #12d7ed;
+	padding: 20px;
+	text-decoration: none;
+	text-shadow: 1px 1px 0px #121214;
+}
+
+#main_nav {
+	width: 1050px;
+	margin: 0 auto;
+	overflow: hidden;
+	clear: both;
+}
+
+#main_nav a {
+	float: left;
+	width: 200px;
+	height: 100px;
+	display: inline-block;
+	margin: 20px;
+	-moz-box-shadow: inset 0px 1px 0px 0px #caefab;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #caefab;
+	box-shadow: inset 0px 1px 0px 0px #caefab;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #77d42a), color-stop(1, #5cb811));
+	background: -moz-linear-gradient(center top, #77d42a 5%, #5cb811 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#77d42a', endColorstr='#5cb811');
+	background-color: #77d42a;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border: 1px solid #268a16;
+	border-radius: 20px;
+	display: inline-block;
+	color: #306108;
+	font-size: 70px;
+	font-weight: bold;
+	padding: 6px 10px;
+	text-decoration: none;
+	text-shadow: 1px 1px 0px #aade7c;
+	text-align: center;
+	line-height: 100px;
+}
+
+#main_nav a:hover {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #5cb811), color-stop(1, #77d42a));
+	background: -moz-linear-gradient(center top, #5cb811 5%, #77d42a 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5cb811', endColorstr='#77d42a');
+	background-color: #5cb811;
+}
+
 /*preloader*/
 
 #lightbox {
