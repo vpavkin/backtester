@@ -114,6 +114,10 @@ div, p, table, select, input {
 	font-size: 70px;
 }
 
+.filters #bg span.version {
+	font-size: 40px;
+}
+
 #nfl-filters #bg {
 	color: orange;
 }
@@ -178,6 +182,12 @@ label {
 	margin-top: 5px;
 	overflow: hidden;
 	clear: both;
+}
+
+#games {
+	clear: both;
+	display: block;
+	float: none;
 }
 
 table a:link {
@@ -305,7 +315,7 @@ input[type="checkbox"]:checked + label span {
 
 #lightbox {
 	position: fixed;
-	top:0;
+	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
