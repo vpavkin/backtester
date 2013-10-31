@@ -30,6 +30,7 @@ var SYSTEM_BASE = {
 	MM: MM_TYPE.FLAT,
 	BET: BETING_TYPE.SINGLE,
 	postFilter: true,
+	isResearch: false,
 	UNIT_SIZE: 100,
 	init: function() {
 	},

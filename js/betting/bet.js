@@ -22,6 +22,9 @@ var B = {
 	isFavHome: function(g) {
 		return g.F == "H";
 	},
+	isFav: function(g, team) {
+		return (B.isFavHome(g) && g.H == team) || (!B.isFavHome(g) && g.R == team);
+	},
 	getOdds: function(g, place, betType) {
 		if (betType == "ML")
 			return g[place + "_ML"];
@@ -37,6 +40,9 @@ var B = {
 		else if (g.R == team)
 			return g["R_ML"];
 		return 0;
+	},
+	getFavMLOdds: function(g) {
+		return B.isFavHome(g) ? g["H_ML"] : g["R_ML"];
 	},
 	isWithinOddRange: function(g, place, betType, start, end) {
 		var odd = B.getOdds(g, place, betType);
@@ -147,7 +153,23 @@ var B = {
 		B.WLP(g, g.U_L, g.U_R);
 		g.betString = g.takenBet + " " + g.betParam;
 	},
+	betAlternativeSpread: function(g, amount, team, spread, odds) {
+		var backScore, layScore;
+		g.stake = B.getAmount(amount);
+		if (g.H == team) {
+			backScore = g.H_R;
+			layScore = g.R_R;
+			g.takenTeam = team;
+		} else if (g.R == team) {
+			backScore = g.R_R;
+			layScore = g.H_R;
+			g.takenTeam = team;
+		}
 
+		g.betParam = spread;
+		g.betString = g.takenTeam + " " + UTILS.spreadToString(spread);
+		B.WLP(g, odds, ((backScore - layScore == -spread) ? 0.5 : ((backScore - layScore > -spread) ? 1 : 0)));
+	},
 	MLB: {
 		betFavReducedSpread: function(g, amount) {
 			g.stake = B.getAmount(amount);
@@ -247,6 +269,28 @@ var B = {
 			g.takenTeam = "";
 			g.takenBet = BET_TYPE.OVER + " " + line;
 			g.takenOdds = odds;
+		}
+	},
+	NHL: {
+		betTeamTotalOver: function(g, amount, team, total, odds) {
+			var backScore, layScore;
+			g.stake = B.getAmount(amount);
+			if (g.H == team) {
+				backScore = g.H_R;
+				layScore = g.R_R;
+				g.takenTeam = team;
+			} else if (g.R == team) {
+				backScore = g.R_R;
+				layScore = g.H_R;
+				g.takenTeam = team;
+			}
+			// remove overtime goal
+			if (backScore - layScore == 1 && g.OT == 1) {
+				backScore = layScore;
+			}
+			g.betParam = total;
+			g.betString = g.takenTeam + " tto" + total;
+			B.WLP(g, odds, ((backScore == total) ? 0.5 : ((backScore > total) ? 1 : 0)));
 		}
 	}
 }
